@@ -9,7 +9,7 @@ final class ge implements ii {
     }
 
     public final void a() {
-        it.a().b((short) this.a);
+        Farm.getInstance().b((short) this.a);
         main.GameGraphic.i();
     }
 }

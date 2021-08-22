@@ -15,7 +15,6 @@ public final class bf extends kj {
         return INST;
     }
 
-    // a
     public final void doJoinPark(int var1, int var2) {
         System.out.println("doJoinPark: " + var1 + "   " + var2);
         if (jy.c == 0) {
@@ -73,7 +72,6 @@ public final class bf extends kj {
         this.k();
     }
 
-    // a int int int
     public final void doGiftGiving(int var1, int var2, int var3) {
         System.out.println("doGiftGiving: " + var1 + "    " + GameMidlet.i.w);
         this.e((byte) 58);
@@ -98,7 +96,6 @@ public final class bf extends kj {
         this.k();
     }
 
-    // b int
     public final void doRequestYourInfo(int var1) {
         System.out.println("doRequestYourInfo: " + var1);
         this.e((byte) -22);
@@ -183,7 +180,6 @@ public final class bf extends kj {
         this.k();
     }
 
-    // d int int
     public final void doRequestWedding(int var1, int var2) {
         System.out.println("doRequestWedding");
         this.e((byte) 93);

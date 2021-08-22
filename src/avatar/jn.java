@@ -117,12 +117,12 @@ public final class jn {
 
                     ce.a().a = kz.a;
                     if (gb.h == -1) {
-                        it var2;
-                        (var2 = it.a()).e((byte) 51);
+                        Farm var2;
+                        (var2 = Farm.getInstance()).e((byte) 51);
                         var2.c(fxClass.l);
                         var2.k();
                     } else if (go.f == null) {
-                        it.a().d();
+                        Farm.getInstance().d();
                     } else {
                         bf.a().doJoinPark(25, 0);
                         go.e();

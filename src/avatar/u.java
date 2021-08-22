@@ -14,7 +14,7 @@ final class u implements ii {
    }
 
    public final void a() {
-      it.a().a((short)((short)this.a), (byte)((byte)this.b), 1);
+      Farm.getInstance().a((short)((short)this.a), (byte)((byte)this.b), 1);
       dp.k = false;
    }
 }

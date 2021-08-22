@@ -15,7 +15,7 @@ final class w implements ii {
         for (int var2 = 0; var2 < go.d.size(); ++var2) {
             dc var3;
             if (go.b((var3 = (dc) go.d.elementAt(var2)).a).e == 6) {
-                it.a().b(go.b, this.b.w, var3.a);
+                Farm.getInstance().doUsingItem(go.b, this.b.w, var3.a);
                 var1 = true;
                 this.a.d(10, -1);
                 break;

@@ -20,8 +20,8 @@ public final class kc extends cc {
             if (this.e > 0) {
                 --this.e;
                 if (this.e == 0) {
-                    it var1;
-                    (var1 = it.a()).e((byte) 83);
+                    Farm var1;
+                    (var1 = Farm.getInstance()).e((byte) 83);
                     var1.k();
                 }
             }

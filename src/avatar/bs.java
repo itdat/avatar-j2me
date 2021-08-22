@@ -14,6 +14,6 @@ final class bs implements ii {
 
     public final void a() {
         go.a(this.a, (byte) 3, this.b.a);
-        it.a().b(go.b, this.c, this.b.a);
+        Farm.getInstance().doUsingItem(go.b, this.c, this.b.a);
     }
 }

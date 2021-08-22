@@ -20,7 +20,7 @@ final class fi implements ii {
                 this.a.M.p = true;
                 this.a.M.q = main.GameGraphic.j();
             }
-            it.a().b(go.b, ((gx) ir.p).w, this.c.a);
+            Farm.getInstance().doUsingItem(go.b, ((gx) ir.p).w, this.c.a);
         }
     }
 }

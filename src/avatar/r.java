@@ -14,7 +14,7 @@ final class r implements ii {
    }
 
    public final void a() {
-      it.a().a((short)((short)this.a), (byte)((byte)this.b), 2);
+      Farm.getInstance().a((short)((short)this.a), (byte)((byte)this.b), 2);
       dp.k = false;
    }
 }

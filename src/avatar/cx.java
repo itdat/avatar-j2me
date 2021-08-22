@@ -95,13 +95,12 @@ public final class cx extends kj {
         this.k();
     }
 
-    // a String String String
-    public final void login(String var1, String var2, String var3) {
+    public final void login(String username, String password, String var3) {
         this.e((byte) -2);
         try {
-            System.out.println("loginaaaaaaaaaaaaaa: " + var1 + "    " + var2);
-            super.b.getDataOutputStream().writeUTF(var1);
-            super.b.getDataOutputStream().writeUTF(var2);
+            System.out.println("login: " + username + " " + password);
+            super.b.getDataOutputStream().writeUTF(username);
+            super.b.getDataOutputStream().writeUTF(password);
             super.b.getDataOutputStream().writeUTF(var3);
         } catch (IOException e) {
             e.printStackTrace();

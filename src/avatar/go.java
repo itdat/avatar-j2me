@@ -186,7 +186,7 @@ public final class go extends hj {
         int var1 = this.j(A.a, A.b);
         if (var1 - c.size() == 0) {
             GameGraphic.i();
-            it.a().b(b);
+            Farm.getInstance().b(b);
         } else {
             if (var1 >= 0 && var1 < c.size()) {
                cf var8;
@@ -339,77 +339,77 @@ public final class go extends hj {
    }
 
    public final void a(int var1) {
-      it var2;
+      Farm var2;
       switch(var1) {
       case 0:
          GameGraphic.a(StringEntity.ei, 1, this);
          return;
       case 1:
-         it.a().d((short)-1);
+         Farm.getInstance().d((short)-1);
          dp.b().d();
          return;
       case 2:
          dp.b().d();
          if (U == 0) {
-             var2 = it.a();
+             var2 = Farm.getInstance();
             var2.e((byte)92);
             var2.k();
             return;
          }
 
-         it.a().e(0);
+         Farm.getInstance().e(0);
          return;
       case 3:
-         it.a().f(1, 0);
+         Farm.getInstance().f(1, 0);
          return;
       case 4:
-         it.a().f(1, 1);
+         Farm.getInstance().f(1, 1);
          return;
       case 5:
-         it.a().g(1, 0);
+         Farm.getInstance().g(1, 0);
          return;
       case 6:
-         it.a().g(1, 1);
+         Farm.getInstance().g(1, 1);
          return;
       case 7:
-         it.a().c((int)1);
+         Farm.getInstance().c((int)1);
          return;
       case 8:
-         it.a().d((int)1);
+         Farm.getInstance().d((int)1);
          return;
       case 9:
-         it.a().h(1, 1);
+         Farm.getInstance().h(1, 1);
          return;
       case 10:
-         it.a().h(1, 2);
+         Farm.getInstance().h(1, 2);
          return;
       case 11:
-         it.a().e(1);
+         Farm.getInstance().e(1);
          return;
       case 12:
          GameGraphic.a(StringEntity.dH, (ii)(new eu(this)));
          return;
       case 13:
-         it.a().i(1, 1);
+         Farm.getInstance().i(1, 1);
          return;
       case 14:
-         it.a().i(1, 2);
+         Farm.getInstance().i(1, 2);
          return;
       case 15:
          cy.b().b(true);
          return;
       case 16:
-         it.a().f(0);
+         Farm.getInstance().f(0);
          return;
       case 17:
-         (var2 = it.a()).e((byte)95);
+         (var2 = Farm.getInstance()).e((byte)95);
          var2.k();
          return;
       case 18:
          getInstance().j();
          return;
       case 19:
-         (var2 = it.a()).e((byte)98);
+         (var2 = Farm.getInstance()).e((byte)98);
          var2.k();
          return;
       case 20:
@@ -420,7 +420,7 @@ public final class go extends hj {
    }
 
    public final void d(int var1, int var2) {
-      it var3;
+      Farm var3;
       az var4;
       dc var8;
       switch(var1) {
@@ -430,7 +430,7 @@ public final class go extends hj {
       case 2:
          if (ir.p != null) {
             GameGraphic.h();
-            it.a().d(b, ((gx)ir.p).w);
+            Farm.getInstance().d(b, ((gx)ir.p).w);
             return;
          }
          break;
@@ -488,7 +488,7 @@ public final class go extends hj {
                         }
                      }
 
-                     it.a().b(b, var5, var4.a);
+                     Farm.getInstance().doUsingItem(b, var5, var4.a);
                   }
                } else {
                     GameGraphic.showAlert(StringEntity.bf + var8.f);
@@ -561,22 +561,22 @@ public final class go extends hj {
          GameGraphic.showAlert(StringEntity.dI);
          return;
       case 11:
-         it.a().h(0, 0);
+         Farm.getInstance().h(0, 0);
          return;
       case 12:
-         (var3 = it.a()).e((byte)85);
+         (var3 = Farm.getInstance()).e((byte)85);
          var3.k();
          return;
       case 13:
          if (J.e > 0) {
-            it.a().d((int)0);
+            Farm.getInstance().d((int)0);
             return;
          }
 
-         it.a().c((int)0);
+         Farm.getInstance().c((int)0);
          return;
       case 14:
-         (var3 = it.a()).e((byte)87);
+         (var3 = Farm.getInstance()).e((byte)87);
          var3.k();
          return;
       case 15:
@@ -661,7 +661,7 @@ public final class go extends hj {
       if (GameMidlet.i.w == b) {
          int var1 = this.j(A.a, A.b);
          GameMidlet.i.getClass();
-         it.a().a(b, var1);
+         Farm.getInstance().doHarvest(b, var1);
       }
    }
 
@@ -671,7 +671,7 @@ public final class go extends hj {
       }
 
       dc var2 = (dc)az.elementAt(var0);
-      it.a().a((int)b, (int)var1, var2.a);
+      Farm.getInstance().a((int)b, (int)var1, var2.a);
    }
 
    private int j(int var1, int var2) {
@@ -937,7 +937,7 @@ public final class go extends hj {
                var6.q = 0;
                ir.d[var6.b * ir.e + var6.a] = var6.o;
                if (var6.c != -1) {
-                  it.a().a((int)b, (int)var1, -1);
+                  Farm.getInstance().a((int)b, (int)var1, -1);
                }
 
                var6.c = -1;
@@ -949,7 +949,7 @@ public final class go extends hj {
                this.a((cf)var6, 4);
                var6.i = false;
                ir.d[var6.b * ir.e + var6.a] = var6.o;
-               it.a().b(b, var1, 100);
+               Farm.getInstance().doUsingItem(b, var1, 100);
             case 2:
             }
          }
@@ -1088,7 +1088,7 @@ public final class go extends hj {
                                     az var7;
                                     if ((var7 = b(((dc)d.elementAt(var6)).a)).e == 2 && (var7.a == 111 || var7.a == 112)) {
                                        var10 = true;
-                                       it.a().b(b, var3.c, var7.a);
+                                       Farm.getInstance().doUsingItem(b, var3.c, var7.a);
                                        break;
                                     }
                                  }
@@ -1795,7 +1795,7 @@ public final class go extends hj {
 
    public final void b(int var1, boolean var2) {
       this.bf = var2;
-      it.a().a(var1);
+      Farm.getInstance().a(var1);
    }
 
     public final void a(int var1, String var2) {
@@ -2020,12 +2020,12 @@ public final class go extends hj {
          this.d(10, -1);
          return;
       case 51:
-         it.a().b(b, 1);
+         Farm.getInstance().b(b, 1);
          this.aJ = System.currentTimeMillis();
          this.b(b, true);
          return;
       case 52:
-         it.a().b(b, 2);
+         Farm.getInstance().b(b, 2);
          this.aJ = System.currentTimeMillis();
          this.b(b, true);
          return;
@@ -2055,7 +2055,7 @@ public final class go extends hj {
       if (dc.a(d, var0) == null) {
          return false;
       } else {
-         it.a().b(b, var1, var0);
+         Farm.getInstance().doUsingItem(b, var1, var0);
          return false;
       }
    }
@@ -2075,7 +2075,7 @@ public final class go extends hj {
    }
 
    private static void a(ai var0) {
-      it.a().c(b, var0.w);
+      Farm.getInstance().c(b, var0.w);
    }
 
    public final void a(int var1, int var2, Vector var3) {

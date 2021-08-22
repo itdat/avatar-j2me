@@ -51,7 +51,7 @@ public final class jd extends hj {
         if (ir.a == 25) {
             this.c = 1;
             var1 = StringEntity.ev[1];
-            it.a().e(0, 0);
+            Farm.getInstance().doOpenATM(0, 0);
             main.GameGraphic.i();
         } else {
             var1 = StringEntity.ev[0];
@@ -143,7 +143,7 @@ public final class jd extends hj {
                     }
 
                     var1 = Integer.parseInt(main.GameGraphic.u.a());
-                    it.a().e(var1, super.ar == 0 ? 1 : 0);
+                    Farm.getInstance().doOpenATM(var1, super.ar == 0 ? 1 : 0);
                     main.GameGraphic.i();
                     return;
                 } catch (Exception var5) {

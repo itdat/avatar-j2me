@@ -619,13 +619,13 @@ public final class ir {
                     GameGraphic.i();
                     go.S = GameMidlet.i.aw;
                     go.T = GameMidlet.i.ax;
-                    it.a().f(0, 0);
+                    Farm.getInstance().f(0, 0);
                     break;
                 case 96:
                     GameGraphic.i();
                     go.S = GameMidlet.i.aw;
                     go.T = GameMidlet.i.ax;
-                    it.a().g(0, 0);
+                    Farm.getInstance().g(0, 0);
                     break;
                 case 97:
                     go.getInstance().m();

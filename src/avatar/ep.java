@@ -23,6 +23,6 @@ final class ep implements ii {
             this.a.M.q = main.GameGraphic.j();
         }
 
-        it.a().b(go.b, this.d.w, this.c);
+        Farm.getInstance().doUsingItem(go.b, this.d.w, this.c);
     }
 }

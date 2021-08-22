@@ -7,6 +7,6 @@ final class eu implements ii {
    }
 
    public final void a() {
-      it.a().i(0, -1);
+      Farm.getInstance().i(0, -1);
    }
 }

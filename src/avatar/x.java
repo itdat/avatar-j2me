@@ -9,6 +9,6 @@ final class x implements ii {
     }
 
     public final void a() {
-        it.a().a(this.a, 1);
+        Farm.getInstance().a(this.a, 1);
     }
 }

@@ -9,6 +9,6 @@ final class av implements ii {
     }
 
     public final void a() {
-        it.a().a(go.b, this.a);
+        Farm.getInstance().a(go.b, this.a);
     }
 }

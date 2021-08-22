@@ -54,7 +54,7 @@ public final class gb {
             k = -1;
             l = -1;
             for (var9 = 0; var9 < size; ++var9) {
-                it.a().a((short) var9);
+                Farm.getInstance().a((short) var9);
                 ++h;
             }
         } else if (i > 0) {
@@ -65,7 +65,7 @@ public final class gb {
         }
         for (var9 = 0; var9 < i; ++var9) {
             if (var1[var9] != j[var9]) {
-                it.a().a((short) var9);
+                Farm.getInstance().a((short) var9);
                 ++h;
             }
         }
@@ -77,30 +77,30 @@ public final class gb {
                 j[var7] = var10[var7];
             }
             for (var7 = i; var7 < size; ++var7) {
-                it.a().a((short) var7);
+                Farm.getInstance().a((short) var7);
                 ++h;
             }
         }
         if (!f()) {
             k = var2;
-            it.a().b();
+            Farm.getInstance().b();
             ++h;
         } else if (k != var2) {
             k = var2;
-            it.a().b();
+            Farm.getInstance().b();
             ++h;
         }
         if (!e()) {
             l = var3;
-            it.a().c();
+            Farm.getInstance().c();
             ++h;
         } else if (l != var3) {
             l = var3;
-            it.a().c();
+            Farm.getInstance().c();
             ++h;
         }
         if (h == 0) {
-            it.a().d();
+            Farm.getInstance().d();
         }
         awClass.c();
     }
@@ -114,7 +114,7 @@ public final class gb {
         awClass.addRecord("avatarImgBigFarm" + var1, var4);
         b(i, j, k, l);
         if (h == 0) {
-            it.a().d();
+            Farm.getInstance().d();
         }
     }
 
@@ -320,7 +320,7 @@ public final class gb {
         c(var0);
         awClass.addRecord("avatarTreeInfoFarm", var0);
         if (h == 0) {
-            it.a().d();
+            Farm.getInstance().d();
         }
     }
 
@@ -373,7 +373,7 @@ public final class gb {
         d(var0);
         awClass.addRecord("avatarImgFarm", var0);
         if (h == 0) {
-            it.a().d();
+            Farm.getInstance().d();
         }
     }
 
@@ -481,7 +481,7 @@ public final class gb {
         if ((var1 = (f) g.get("" + var0)) == null) {
             var1 = new f();
             g.put("" + var0, var1);
-            it.a().c(var0);
+            Farm.getInstance().c(var0);
         } else if (var1.d >= 0) {
             var1.d = (int) (System.currentTimeMillis() / 1000L);
         }

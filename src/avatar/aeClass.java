@@ -554,7 +554,6 @@ public final class aeClass extends hj implements cq {
         cx.getInstance().b((int) var0);
     }
 
-    // b byte
     public final void doJoinShop(byte var1) {
         if (g == -1) {
             this.n();
