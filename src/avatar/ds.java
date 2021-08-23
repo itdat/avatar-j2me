@@ -1,6 +1,6 @@
 package avatar;
 
-final class ds implements ii {
+final class ds implements Intent {
 
     private final byte a;
 

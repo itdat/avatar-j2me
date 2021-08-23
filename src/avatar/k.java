@@ -5,7 +5,7 @@ import avatar.aeClass;
 
 
 
-final class k implements ii {
+final class k implements Intent {
    private aeClass a;
    private final ld b;
 

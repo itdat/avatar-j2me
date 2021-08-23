@@ -740,7 +740,7 @@ public final class ce extends kj implements CmInterface {
                     var192 = iOStream.getDataInputStream().readUTF();
                     var197 = iOStream.getDataInputStream().readUTF();
                     GameGraphic.h();
-                    GameGraphic.a(var189, (ii) (new bm(this, var192, var197)));
+                    GameGraphic.a(var189, (Intent) (new bm(this, var192, var197)));
                     break;
                 case -52:
                     var189 = iOStream.getDataInputStream().readUTF();

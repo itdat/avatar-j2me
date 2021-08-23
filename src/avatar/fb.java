@@ -6,7 +6,7 @@ final class fb extends Button {
 
     private final az f;
 
-    fb(go var1, String var2, ii var3, az var4) {
+    fb(go var1, String var2, Intent var3, az var4) {
         super(var2, var3);
         this.f = var4;
     }

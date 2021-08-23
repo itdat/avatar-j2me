@@ -2,7 +2,7 @@ package avatar;
 
 
 
-final class en implements ii {
+final class en implements Intent {
    private go a;
    private final cf b;
 

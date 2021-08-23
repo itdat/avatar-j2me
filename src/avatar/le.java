@@ -25,7 +25,7 @@ public final class le extends kr {
    private int t;
    private int u = 0;
    private static Button v;
-   public static ii g;
+   public static Intent g;
    public static short[] h;
    private int w;
    private int x;

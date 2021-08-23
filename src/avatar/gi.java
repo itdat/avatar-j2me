@@ -2,7 +2,7 @@ package avatar;
 
 import main.GameMidlet;
 
-final class gi implements ii {
+final class gi implements Intent {
 
     final ei a;
     private final int b;

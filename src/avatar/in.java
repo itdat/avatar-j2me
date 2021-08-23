@@ -2,7 +2,7 @@ package avatar;
 
 import main.GameGraphic;
 
-final class in implements ii {
+final class in implements Intent {
 
     private final hn a; // character
 

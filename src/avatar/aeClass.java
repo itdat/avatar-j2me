@@ -137,7 +137,7 @@ public final class aeClass extends hj implements cq {
         hn var3;
         if ((var3 = ir.g(var2)) != null) {
             if (var1 == 0) {
-                GameGraphic.a(StringEntity.INVITED_HOME_BY + var3.x + ". " + StringEntity.DO_YOU_WANT, (ii) (new ih(this, var2)));
+                GameGraphic.a(StringEntity.INVITED_HOME_BY + var3.x + ". " + StringEntity.DO_YOU_WANT, (Intent) (new ih(this, var2)));
             } else {
                 if (var1 == 1) {
                     v = var2;
@@ -676,7 +676,7 @@ public final class aeClass extends hj implements cq {
     public final void e(int var1) {
         if (h != null) {
             fa var2 = (fa) fxClass.a((short) var1);
-            GameGraphic.a(var2.i[0], var2.i[1], new ij(this, var2), new ik(this, var2), (ii) null);
+            GameGraphic.a(var2.i[0], var2.i[1], new ij(this, var2), new ik(this, var2), (Intent) null);
         }
     }
 
@@ -956,7 +956,7 @@ public final class aeClass extends hj implements cq {
     }
 
     private Button b(CharacterStatsEntity var1) {
-        return new fk(this, (String) null, (ii) null, var1);
+        return new fk(this, (String) null, (Intent) null, var1);
     }
 
     public final void a(CharacterStatsEntity var1) {
@@ -1089,7 +1089,7 @@ public final class aeClass extends hj implements cq {
     }
 
     protected final void a(dc var1) {
-        GameGraphic.a(StringEntity.aF, (ii) (new fc(this, var1)));
+        GameGraphic.a(StringEntity.aF, (Intent) (new fc(this, var1)));
     }
 
     public static void a(short var0, int var1) {
@@ -1466,7 +1466,7 @@ public final class aeClass extends hj implements cq {
     }
 
     public final void v() {
-        GameGraphic.a(StringEntity.WANT_EXIT, (ii) (new l(this)));
+        GameGraphic.a(StringEntity.WANT_EXIT, (Intent) (new l(this)));
     }
 
     public static void w() {

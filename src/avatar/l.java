@@ -1,11 +1,6 @@
 package avatar;
 
-
-import avatar.aeClass;
-
-
-
-final class l implements ii {
+final class l implements Intent {
    l(aeClass var1) {
    }
 

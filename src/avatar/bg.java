@@ -2,7 +2,7 @@ package avatar;
 
 
 
-final class bg implements ii {
+final class bg implements Intent {
    private go a;
 
    bg(go var1) {

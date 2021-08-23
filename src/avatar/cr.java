@@ -1,6 +1,6 @@
 package avatar;
 
-final class cr implements ii {
+final class cr implements Intent {
 
     private ei a;
     private final ag b;

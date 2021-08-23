@@ -2,7 +2,7 @@ package avatar;
 
 import java.util.Vector;
 
-final class dd implements ii {
+final class dd implements Intent {
 
     dd(ei var1) {
     }

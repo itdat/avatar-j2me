@@ -34,7 +34,7 @@ public final class ea extends hj {
     private static int C;
     private static int D;
     private static int E;
-    public ii h;
+    public Intent h;
     public static String i;
     private boolean F;
     public static boolean j = false;
@@ -52,7 +52,7 @@ public final class ea extends hj {
     private int O;
     private long P;
     private long Q;
-    public static ii n;
+    public static Intent n;
     public static byte o;
 
     public static ea b() {

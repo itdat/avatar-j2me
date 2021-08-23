@@ -5,7 +5,7 @@ import javax.microedition.lcdui.Graphics;
 final class hg extends Button {
    private az f;
 
-   public hg(go var1, String var2, ii var3, az var4) {
+   public hg(go var1, String var2, Intent var3, az var4) {
       super(var2, var3);
       this.f = var4;
    }

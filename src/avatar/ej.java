@@ -1,6 +1,6 @@
 package avatar;
 
-final class ej implements ii {
+final class ej implements Intent {
 
     private final hn a;
 

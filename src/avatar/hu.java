@@ -3,7 +3,7 @@ package avatar;
 import main.GameMidlet;
 import main.GameGraphic;
 
-final class hu implements ii {
+final class hu implements Intent {
 
     private final hd a;
 

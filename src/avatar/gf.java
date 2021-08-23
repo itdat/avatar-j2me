@@ -3,7 +3,7 @@ package avatar;
 import main.GameMidlet;
 import main.GameGraphic;
 
-final class gf implements ii {
+final class gf implements Intent {
 
     private final hx a;
     private final int b;
@@ -20,7 +20,7 @@ final class gf implements ii {
     public final void a() {
         ld var1 = fxClass.a(this.a.a);
         if (this.b == GameMidlet.i.w && (!fxClass.c((int) var1.j) || this.c != 0)) {
-            GameGraphic.a(StringEntity.CHEST_ACTIONS[this.c], (ii) (new gd(this, this.c, this.d, this.a)));
+            GameGraphic.a(StringEntity.CHEST_ACTIONS[this.c], (Intent) (new gd(this, this.c, this.d, this.a)));
         }
     }
 }

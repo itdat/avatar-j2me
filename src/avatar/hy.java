@@ -47,7 +47,7 @@ public final class hy extends gs {
     public final void a(int var1) {
         switch (var1) {
             case 0:
-                main.GameGraphic.a("Bạn có chắc muốn chuyển tiền không ?", (ii) (new jm(this)));
+                main.GameGraphic.a("Bạn có chắc muốn chuyển tiền không ?", (Intent) (new jm(this)));
                 return;
             case 1:
                 main.GameGraphic.v = null;

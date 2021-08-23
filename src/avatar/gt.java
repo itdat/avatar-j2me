@@ -1,6 +1,6 @@
 package avatar;
 
-final class gt implements ii {
+final class gt implements Intent {
 
     private ld a;
     private short b;
@@ -22,7 +22,7 @@ final class gt implements ii {
 
     public final void a() {
         if (this.e == 100) {
-            main.GameGraphic.a(StringEntity.cP, (ii) (new kw(this.g, this.b)));
+            main.GameGraphic.a(StringEntity.cP, (Intent) (new kw(this.g, this.b)));
         } else if (this.e == 26) {
             main.GameGraphic.h();
             aeClass.getInstance().e(this.b);
@@ -34,7 +34,7 @@ final class gt implements ii {
             }
 
             if (this.c != -1 && this.e != 17 && this.e != 18) {
-                main.GameGraphic.a(this.d, (ii) (new eq(this.g, this.c, this.e, this.f)));
+                main.GameGraphic.a(this.d, (Intent) (new eq(this.g, this.c, this.e, this.f)));
             } else {
                 aeClass.b(var1);
             }

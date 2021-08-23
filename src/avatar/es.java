@@ -560,7 +560,7 @@ public final class es extends hj {
                 if (this.G.length != 2) {
                     jk var1 = new jk(this);
                     if (!this.I.equals("") && this.b.f().equals("")) {
-                        main.GameGraphic.a("Tài khoản của bạn chưa được đăng kí liên kết với một tài khoản Team. Bạn sẽ mất tài khoản đang chơi nếu tiếp tục. Bạn có muốn tiếp tục ?", (ii) var1);
+                        main.GameGraphic.a("Tài khoản của bạn chưa được đăng kí liên kết với một tài khoản Team. Bạn sẽ mất tài khoản đang chơi nếu tiếp tục. Bạn có muốn tiếp tục ?", (Intent) var1);
                         return;
                     }
 
@@ -576,7 +576,7 @@ public final class es extends hj {
     private void p() {
         dg var1 = new dg(this);
         if (!this.I.equals("") && this.b.f().equals("")) {
-            main.GameGraphic.a("Tài khoản của bạn chưa được đăng kí liên kết với một tài khoản Team. Bạn sẽ mất tài khoản đang chơi nếu tiếp tục. Bạn có muốn tiếp tục ?", (ii) var1);
+            main.GameGraphic.a("Tài khoản của bạn chưa được đăng kí liên kết với một tài khoản Team. Bạn sẽ mất tài khoản đang chơi nếu tiếp tục. Bạn có muốn tiếp tục ?", (Intent) var1);
         } else {
             var1.a();
         }

@@ -2,7 +2,7 @@ package avatar;
 
 import main.GameMidlet;
 
-final class fq implements ii {
+final class fq implements Intent {
 
     private go a;
     private final cf b;

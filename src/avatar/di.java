@@ -1,6 +1,6 @@
 package avatar;
 
-final class di implements ii {
+final class di implements Intent {
    di(dj var1) {
    }
 

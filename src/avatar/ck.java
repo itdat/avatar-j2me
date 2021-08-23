@@ -1,6 +1,6 @@
 package avatar;
 
-final class ck implements ii {
+final class ck implements Intent {
 
     private jp a;
 

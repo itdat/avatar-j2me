@@ -1,6 +1,6 @@
 package avatar;
 
-final class de implements ii {
+final class de implements Intent {
 
     private ei a;
 

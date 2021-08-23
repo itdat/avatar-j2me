@@ -8,7 +8,7 @@ final class e extends Button {
     private final ld g;
     private final byte h;
 
-    e(aeClass var1, String var2, ii var3, ld var4, byte var5) {
+    e(aeClass var1, String var2, Intent var3, ld var4, byte var5) {
         super(var2, var3);
         this.f = var1;
         this.g = var4;

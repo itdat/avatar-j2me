@@ -1,6 +1,6 @@
 package avatar;
 
-final class jc implements ii {
+final class jc implements Intent {
 
     jc(cd var1) {
     }

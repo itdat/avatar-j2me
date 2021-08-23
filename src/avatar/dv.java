@@ -4,7 +4,7 @@ package avatar;
 
 import main.GameMidlet;
 
-final class dv implements ii {
+final class dv implements Intent {
    private final String a;
 
    dv(jn var1, String var2) {

@@ -5,7 +5,7 @@ import avatar.ce;
 
 
 
-final class br implements ii {
+final class br implements Intent {
    private final int a;
 
    br(ce var1, int var2) {

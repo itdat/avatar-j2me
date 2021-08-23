@@ -1,6 +1,6 @@
 package avatar;
 
-final class fw implements ii {
+final class fw implements Intent {
 
     private final kq a;
 

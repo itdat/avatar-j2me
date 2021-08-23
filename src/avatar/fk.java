@@ -6,8 +6,8 @@ final class fk extends Button {
 
     private final CharacterStatsEntity f;
 
-    fk(aeClass var1, String var2, ii var3, CharacterStatsEntity var4) {
-        super((String) null, (ii) null);
+    fk(aeClass var1, String var2, Intent var3, CharacterStatsEntity var4) {
+        super((String) null, (Intent) null);
         this.f = var4;
     }
 

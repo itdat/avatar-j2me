@@ -5,7 +5,7 @@ package avatar;
 import avatar.ce;
 import main.GameMidlet;
 
-final class bm implements ii {
+final class bm implements Intent {
    private final String a;
    private final String b;
 

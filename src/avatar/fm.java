@@ -12,8 +12,8 @@ final class fm extends Button {
     private final byte percent;
     private final String l;
 
-    fm(aeClass var1, String var2, ii var3, String var4, hn var5, hn var6, short var7, byte var8, byte var9, String var10) {
-        super(var2, (ii) null);
+    fm(aeClass var1, String var2, Intent var3, String var4, hn var5, hn var6, short var7, byte var8, byte var9, String var10) {
+        super(var2, (Intent) null);
         this.f = var4;
         this.g = var5;
         this.h = var6;

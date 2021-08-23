@@ -5,7 +5,7 @@ package avatar;
 import javax.microedition.lcdui.Graphics;
 
 final class bk extends Button {
-   bk(go var1, String var2, ii var3) {
+   bk(go var1, String var2, Intent var3) {
       super(var2, var3);
    }
 

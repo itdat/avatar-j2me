@@ -239,7 +239,7 @@ public final class go extends hj {
         GameGraphic.a(var0, vector);
     }
 
-    private void a(ii var1) {
+    private void a(Intent var1) {
         if (E != -1) {
             this.aD.addElement(var1);
         } else {
@@ -253,7 +253,7 @@ public final class go extends hj {
         for(int i = 0; i < d.size(); ++i) {
             az var5 = b(((dc)d.elementAt(i)).a);
             if (var5.d == 0 && var5.e == var2) {
-                this.a((ii)(new bs(this, var5, var1)));
+                this.a((Intent)(new bs(this, var5, var1)));
                 hasMedicine = true;
                 break;
             }
@@ -278,7 +278,7 @@ public final class go extends hj {
       }
 
       if (var1.c != -1 && var1.q < 6 && var1.o == 36) {
-         this.a((ii)(new bg(this)));
+         this.a((Intent)(new bg(this)));
       }
 
       if (var1.c == -1 || var1.q >= 6) {
@@ -291,7 +291,7 @@ public final class go extends hj {
             return;
          }
 
-         this.a((ii)var7);
+         this.a((Intent)var7);
       }
 
       if (var1.c != -1 && var1.q < 6 && var2 < c.size() && d.size() > 0) {
@@ -387,7 +387,7 @@ public final class go extends hj {
          Farm.getInstance().e(1);
          return;
       case 12:
-         GameGraphic.a(StringEntity.dH, (ii)(new eu(this)));
+         GameGraphic.a(StringEntity.dH, (Intent)(new eu(this)));
          return;
       case 13:
          Farm.getInstance().i(1, 1);
@@ -603,7 +603,7 @@ public final class go extends hj {
    }
 
    private void a(az var1, short var2, ai var3) {
-      this.a((ii)(new ep(this, var1, var2, var3)));
+      this.a((Intent)(new ep(this, var1, var2, var3)));
    }
 
    protected final void a(dc var1, int var2) {
@@ -967,8 +967,8 @@ public final class go extends hj {
       if (y) {
          this.d(10, -1);
       } else if (this.aD.size() > 0) {
-         ii var1;
-         (var1 = (ii)this.aD.elementAt(0)).a();
+         Intent var1;
+         (var1 = (Intent)this.aD.elementAt(0)).a();
          this.aD.removeElement(var1);
       } else {
          if (this.aX) {
@@ -1064,7 +1064,7 @@ public final class go extends hj {
                         } else {
                            boolean var5 = false;
                            if (var4.c != -1 && var4.q < 6 && var4.o == 36) {
-                              this.a((ii)(new fp(this, var4)));
+                              this.a((Intent)(new fp(this, var4)));
                               var5 = true;
                            }
 
@@ -1107,8 +1107,8 @@ public final class go extends hj {
                         this.u();
                         this.A();
                      } else {
-                        this.a((ii)(new fq(this, var4)));
-                        this.a((ii)(new gc(this, var3)));
+                        this.a((Intent)(new fq(this, var4)));
+                        this.a((Intent)(new gc(this, var3)));
                      }
 
                      this.ba.removeElement(var3);
@@ -1799,7 +1799,7 @@ public final class go extends hj {
    }
 
     public final void a(int var1, String var2) {
-        GameGraphic.a(StringEntity.bp + " " + var2 + "?", (ii)(new ge(this, var1)));
+        GameGraphic.a(StringEntity.bp + " " + var2 + "?", (Intent)(new ge(this, var1)));
     }
 
    public final void g() {
@@ -1924,7 +1924,7 @@ public final class go extends hj {
             }
          }
 
-         GameGraphic.a(var4 * var3, var5 * var3, new u(this, var1, var3, var4), new r(this, var1, var3, var5), (ii)null);
+         GameGraphic.a(var4 * var3, var5 * var3, new u(this, var1, var3, var4), new r(this, var1, var3, var5), (Intent)null);
       }
 
    }
@@ -2040,7 +2040,7 @@ public final class go extends hj {
    }
 
    public final void a(ad var1) {
-      GameGraphic.a(var1.e[0], var1.e[1], new x(this, var1), new aj(this, var1), (ii)null);
+      GameGraphic.a(var1.e[0], var1.e[1], new x(this, var1), new aj(this, var1), (Intent)null);
    }
 
    public static void i() {
@@ -2145,7 +2145,7 @@ public final class go extends hj {
    }
 
    public final void a(byte var1, String var2) {
-        GameGraphic.a(var2, (ii)(new av(this, var1)));
+        GameGraphic.a(var2, (Intent)(new av(this, var1)));
    }
 
    public final void j() {

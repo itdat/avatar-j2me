@@ -2,7 +2,7 @@ package avatar;
 
 
 
-final class r implements ii {
+final class r implements Intent {
    private final int a;
    private final int b;
    private final int c;

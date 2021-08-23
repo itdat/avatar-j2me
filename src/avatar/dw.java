@@ -2,7 +2,7 @@ package avatar;
 
 
 
-final class dw implements ii {
+final class dw implements Intent {
    dw(jn var1) {
    }
 

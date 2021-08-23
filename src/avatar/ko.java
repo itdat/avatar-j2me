@@ -7,7 +7,7 @@ final class ko extends Button {
     private int f = 0;
     private dc g;
 
-    public ko(go var1, String var2, ii var3, int var4, dc var5) {
+    public ko(go var1, String var2, Intent var3, int var4, dc var5) {
         super(var2, var3);
         this.f = var4;
         this.g = var5;

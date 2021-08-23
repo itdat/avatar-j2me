@@ -2,7 +2,7 @@ package avatar;
 
 import java.util.Vector;
 
-final class ee implements ii {
+final class ee implements Intent {
 
     private final Button a;
 

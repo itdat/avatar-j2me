@@ -1,6 +1,6 @@
 package avatar;
 
-final class ec implements ii {
+final class ec implements Intent {
 
     ec(ed var1) {
     }

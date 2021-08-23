@@ -2,7 +2,7 @@ package avatar;
 
 
 
-final class eu implements ii {
+final class eu implements Intent {
    eu(go var1) {
    }
 

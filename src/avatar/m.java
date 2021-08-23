@@ -1,6 +1,6 @@
 package avatar;
 
-final class m implements ii {
+final class m implements Intent {
 
     private aeClass a;
     private final KeyboardManager[] b;

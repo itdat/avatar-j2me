@@ -2,7 +2,7 @@ package avatar;
 
 import main.GameGraphic;
 
-final class ih implements ii {
+final class ih implements Intent {
 
     private final int a;
 

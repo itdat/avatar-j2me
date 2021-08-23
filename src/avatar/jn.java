@@ -175,7 +175,7 @@ public final class jn {
 
     public final void a(byte var1, byte var2, String var3) {
         if (var2 == 0) {
-            main.GameGraphic.a(var3, (ii) (new ds(this, var1)));
+            main.GameGraphic.a(var3, (Intent) (new ds(this, var1)));
         } else {
             main.GameGraphic.showAlert(var3);
         }

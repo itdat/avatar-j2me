@@ -234,7 +234,7 @@ public final class cd extends hj {
                 if (ir.p != null && ir.p.az == 5) {
                     bf.a().c(((hm) ir.p).d);
                 } else if (ir.p != null && ir.p.az == 0 && ((hn) ir.p).w == -100) {
-                    main.GameGraphic.a(StringEntity.eb, (ii) (new jc(this)));
+                    main.GameGraphic.a(StringEntity.eb, (Intent) (new jc(this)));
                 } else {
                     Vector var1 = new Vector();
                     Button var2 = this.a(StringEntity.bX, 1, 1);
@@ -301,7 +301,7 @@ public final class cd extends hj {
         return new iz(this, var1, var2, var3);
     }
 
-    public final Button a(String var1, ii var2, int var3) {
+    public final Button a(String var1, Intent var2, int var3) {
         return new iv(this, var1, new iu(this, var2), var3);
     }
 

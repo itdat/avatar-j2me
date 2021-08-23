@@ -2,7 +2,7 @@ package avatar;
 
 import main.GameMidlet;
 
-final class dq implements ii {
+final class dq implements Intent {
 
     dq(jn var1) {
     }

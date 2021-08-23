@@ -2,7 +2,7 @@ package avatar;
 
 
 
-final class hv implements ii {
+final class hv implements Intent {
    hv(ir var1) {
    }
 

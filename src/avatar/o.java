@@ -1,6 +1,6 @@
 package avatar;
 
-final class o implements ii {
+final class o implements Intent {
 
     o(aeClass var1) {
     }

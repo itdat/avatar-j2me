@@ -2,7 +2,7 @@ package avatar;
 
 
 
-final class ka implements ii {
+final class ka implements Intent {
    ka(eo var1) {
    }
 

@@ -9,7 +9,7 @@ final class gk extends Button {
     private final String h;
     private final String i;
 
-    gk(ei var1, String var2, ii var3, ag var4, int var5, String var6, String var7) {
+    gk(ei var1, String var2, Intent var3, ag var4, int var5, String var6, String var7) {
         super(var2, var3);
         this.f = var4;
         this.g = 90;

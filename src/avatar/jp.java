@@ -178,7 +178,7 @@ public final class jp extends hj {
     }
 
     public final void f() {
-        main.GameGraphic.a("Hiện tại bạn không đủ Xèng để tham gia màn chơi, bạn có muốn nạp thêm Xèng không?", (ii) (new cl(this)));
+        main.GameGraphic.a("Hiện tại bạn không đủ Xèng để tham gia màn chơi, bạn có muốn nạp thêm Xèng không?", (Intent) (new cl(this)));
     }
 
     private static void i() {

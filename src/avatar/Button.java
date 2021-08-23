@@ -6,12 +6,12 @@ import main.GameGraphic;
 public class Button {
 
     public String text;
-    public ii b;
+    public Intent b;
     public byte c;
     public gy d;
     public short e = -1;
 
-    public Button(String text, ii var2) {
+    public Button(String text, Intent var2) {
         this.text = text;
         this.b = var2;
     }

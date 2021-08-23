@@ -1016,7 +1016,7 @@ public final class ei extends hj implements cq {
                 return;
             case 13:
                 if (var3 != -1 && var5.b != this.z) {
-                    main.GameGraphic.a(StringEntity.da, (ii) (new fw(this, var5)));
+                    main.GameGraphic.a(StringEntity.da, (Intent) (new fw(this, var5)));
                     return;
                 }
                 main.GameGraphic.showAlert(StringEntity.cX);

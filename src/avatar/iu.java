@@ -2,10 +2,10 @@ package avatar;
 
 
 
-final class iu implements ii {
-   private final ii a;
+final class iu implements Intent {
+   private final Intent a;
 
-   iu(cd var1, ii var2) {
+   iu(cd var1, Intent var2) {
       this.a = var2;
    }
 

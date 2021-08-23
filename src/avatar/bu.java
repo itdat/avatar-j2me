@@ -9,7 +9,7 @@ import javax.microedition.lcdui.Graphics;
 final class bu extends Button {
    private final short f;
 
-   bu(ce var1, String var2, ii var3, short var4) {
+   bu(ce var1, String var2, Intent var3, short var4) {
       super(var2, var3);
       this.f = var4;
    }

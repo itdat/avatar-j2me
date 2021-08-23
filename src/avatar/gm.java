@@ -1,6 +1,6 @@
 package avatar;
 
-final class gm implements ii {
+final class gm implements Intent {
 
     private cg a;
 

@@ -1,6 +1,6 @@
 package avatar;
 
-final class hr implements ii {
+final class hr implements Intent {
    hr(ir var1) {
    }
 

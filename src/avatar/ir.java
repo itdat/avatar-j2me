@@ -347,7 +347,7 @@ public final class ir {
     }
 
     private void f() {
-        GameGraphic.a(StringEntity.WANT_EXIT, (ii) (new hs(this)));
+        GameGraphic.a(StringEntity.WANT_EXIT, (Intent) (new hs(this)));
     }
 
     public final boolean a(int var1, int var2) {

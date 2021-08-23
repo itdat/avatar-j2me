@@ -9,8 +9,8 @@ final class fj extends Button {
     private final gr g;
     private final bc h;
 
-    fj(String var1, ii var2, hn var3, gr var4, bc var5) {
-        super((String) null, (ii) null);
+    fj(String var1, Intent var2, hn var3, gr var4, bc var5) {
+        super((String) null, (Intent) null);
         this.f = var3;
         this.g = var4;
         this.h = var5;

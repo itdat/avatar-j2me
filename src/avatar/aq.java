@@ -8,7 +8,7 @@ final class aq extends Button {
     private final hf f;
     private final int g;
 
-    aq(go var1, String var2, ii var3, hf var4, int var5) {
+    aq(go var1, String var2, Intent var3, hf var4, int var5) {
         super(var2, var3);
         this.f = var4;
         this.g = var5;

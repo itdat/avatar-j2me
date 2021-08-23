@@ -2,7 +2,7 @@ package avatar;
 
 
 
-final class dk implements ii {
+final class dk implements Intent {
    private bb a;
 
    dk(bb var1) {

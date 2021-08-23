@@ -2,7 +2,7 @@ package avatar;
 
 import main.GameMidlet;
 
-final class ci implements ii {
+final class ci implements Intent {
 
     private final String a;
 

@@ -8,7 +8,7 @@ final class fz extends Button {
     private final int g;
     private final int h;
 
-    fz(aeClass var1, String var2, ii var3, hx var4, int var5, int var6) {
+    fz(aeClass var1, String var2, Intent var3, hx var4, int var5, int var6) {
         super(var2, var3);
         this.f = var4;
         this.g = var5;

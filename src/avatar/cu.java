@@ -1,6 +1,6 @@
 package avatar;
 
-final class cu implements ii {
+final class cu implements Intent {
 
     cu(kn var1) {
     }

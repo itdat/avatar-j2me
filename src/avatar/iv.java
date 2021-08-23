@@ -7,7 +7,7 @@ import javax.microedition.lcdui.Graphics;
 final class iv extends Button {
    private final int f;
 
-   iv(cd var1, String var2, ii var3, int var4) {
+   iv(cd var1, String var2, Intent var3, int var4) {
       super(var2, var3);
       this.f = var4;
    }

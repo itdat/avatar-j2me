@@ -43,7 +43,7 @@ public final class KeyboardManager {
     public static ht r;
     private static Canvas canvas; // L
     public static int s;
-    public static ii t;
+    public static Intent t;
     public static boolean u = false;
     private int M = -1;
     private int N = 0;

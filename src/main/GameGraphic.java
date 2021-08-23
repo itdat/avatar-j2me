@@ -948,7 +948,8 @@ public final class GameGraphic extends Canvas implements Runnable, CommandListen
         }
     }
 
-    public static void a(String var0, ii var1) {
+    // show confirm
+    public static void a(String var0, Intent var1) {
         Vector var2 = new Vector();
         var2.addElement(new Button(StringEntity.YES, var1));
         var2.addElement(ad);
@@ -962,7 +963,7 @@ public final class GameGraphic extends Canvas implements Runnable, CommandListen
         a(var0, var3);
     }
 
-    public static void b(String var0, ii var1) {
+    public static void b(String var0, Intent var1) {
         Vector var2 = new Vector();
         var2.addElement(new Button(StringEntity.OK, var1));
         a(var0, var2);
@@ -1089,7 +1090,7 @@ public final class GameGraphic extends Canvas implements Runnable, CommandListen
         return h >= var0 && h <= var0 + var2 && i >= var1 && i <= var1 + var3;
     }
 
-    public static void a(int var0, int var1, ii var2, ii var3, ii var4) {
+    public static void a(int var0, int var1, Intent var2, Intent var3, Intent var4) {
         String var5 = "";
         Vector var6 = new Vector();
         if (var0 > 0) {

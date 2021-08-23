@@ -16,7 +16,6 @@ public final class cx extends kj {
         return INST;
     }
 
-    // sendMessageToServer
     public final void sendMessageToServer(byte type, String message) {
         if (message == null) {
             message = "";

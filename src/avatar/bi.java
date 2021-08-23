@@ -2,7 +2,7 @@ package avatar;
 
 
 
-final class bi implements ii {
+final class bi implements Intent {
    private go a;
    private final cf b;
 

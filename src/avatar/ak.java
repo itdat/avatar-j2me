@@ -1,6 +1,6 @@
 package avatar;
 
-final class ak implements ii {
+final class ak implements Intent {
 
     private final byte a;
     private final dc b;

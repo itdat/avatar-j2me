@@ -1,6 +1,6 @@
 package avatar;
 
-final class fl implements ii {
+final class fl implements Intent {
 
     fl(cz var1) {
     }

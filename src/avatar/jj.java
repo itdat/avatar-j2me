@@ -7,7 +7,7 @@ import main.GameGraphic;
 public final class jj extends gs {
 
     private Vector c;
-    private String d = "";
+    private String d = "";  // message
     private Vector e = new Vector();
     private int f = 0;
     private int g;

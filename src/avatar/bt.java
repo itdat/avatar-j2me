@@ -1,10 +1,10 @@
 package avatar;
 
-final class bt implements ii {
+final class bt implements Intent {
 
-    private final ii a;
+    private final Intent a;
 
-    bt(q var1, ii var2) {
+    bt(q var1, Intent var2) {
         this.a = var2;
     }
 

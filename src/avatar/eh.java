@@ -2,7 +2,7 @@ package avatar;
 
 import java.util.Vector;
 
-final class eh implements ii {
+final class eh implements Intent {
 
     final aeClass a;
     private final Vector b;
@@ -31,7 +31,7 @@ final class eh implements ii {
             hx var5;
             ld var6;
             if (!fxClass.c((int) (var6 = fxClass.a((var5 = (hx) var1.elementAt(dp.j)).a)).j) || this.c == 1) {
-                main.GameGraphic.a(StringEntity.cp, (ii) (new eg(this, var6, this.c, var1, this.b, var5, this.d)));
+                main.GameGraphic.a(StringEntity.cp, (Intent) (new eg(this, var6, this.c, var1, this.b, var5, this.d)));
             }
 
         }

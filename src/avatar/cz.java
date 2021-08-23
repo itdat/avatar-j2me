@@ -296,11 +296,11 @@ public final class cz extends hj implements cq {
             case 2:
                 fl var3 = new fl(this);
                 if (this.d) {
-                    main.GameGraphic.a(StringEntity.eP, (ii) var3);
+                    main.GameGraphic.a(StringEntity.eP, (Intent) var3);
                     return;
                 }
 
-                main.GameGraphic.a(StringEntity.ee, (ii) var3);
+                main.GameGraphic.a(StringEntity.ee, (Intent) var3);
                 return;
             case 3:
                 do1 var10000 = do1.a();

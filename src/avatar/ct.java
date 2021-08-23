@@ -1,6 +1,6 @@
 package avatar;
 
-final class ct implements ii {
+final class ct implements Intent {
 
     private String a;
     private ea b;
@@ -11,6 +11,6 @@ final class ct implements ii {
     }
 
     public final void a() {
-        main.GameGraphic.a(this.a, (ii) (new iq(this.b)));
+        main.GameGraphic.a(this.a, (Intent) (new iq(this.b)));
     }
 }

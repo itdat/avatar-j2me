@@ -98,7 +98,7 @@ public final class jd extends hj {
                 gu var8 = (gu) this.b.elementAt(super.ar);
                 if (var8.c.indexOf(StringEntity.aH) != -1) {
                     var3 = main.GameGraphic.K.a(var8.c, StringEntity.aI, GameMidlet.i.x);
-                    main.GameGraphic.a(StringEntity.cL, (ii) (new ci(this, var3)));
+                    main.GameGraphic.a(StringEntity.cL, (Intent) (new ci(this, var3)));
                 } else {
                     String var9;
                     if (var8.c.indexOf("napthe:") != -1) {

@@ -1,6 +1,6 @@
 package avatar;
 
-final class eq implements ii {
+final class eq implements Intent {
 
     private int a;
     private int b;

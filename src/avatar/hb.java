@@ -7,7 +7,7 @@ public final class hb extends gs {
 
     private String[] a;
     private KeyboardManager b = new KeyboardManager();
-    private ii c;
+    private Intent c;
     private Image d;
     private int e;
     private int f;
@@ -71,7 +71,7 @@ public final class hb extends gs {
         main.GameGraphic.v = this;
     }
 
-    public final void a(String var1, ii var2, int var3) {
+    public final void a(String var1, Intent var2, int var3) {
         this.a(var1, var3);
         this.c = var2;
         super.ad = new Button(StringEntity.OK, this.c);

@@ -1,6 +1,6 @@
 package avatar;
 
-public interface ii {
+public interface Intent {
 
     void a();
 }

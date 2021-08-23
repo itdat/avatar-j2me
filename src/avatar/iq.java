@@ -1,6 +1,6 @@
 package avatar;
 
-final class iq implements ii {
+final class iq implements Intent {
 
     iq(ea var1) {
     }

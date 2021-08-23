@@ -1,6 +1,6 @@
 package avatar;
 
-final class jw implements ii {
+final class jw implements Intent {
 
     private KeyboardManager a;
 

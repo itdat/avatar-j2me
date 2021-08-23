@@ -1,6 +1,6 @@
 package avatar;
 
-final class ig implements ii {
+final class ig implements Intent {
 
     private aeClass a;
 
