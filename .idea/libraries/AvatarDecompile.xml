@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="AvatarDecompile">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/AvatarDecompile.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

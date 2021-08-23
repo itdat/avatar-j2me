@@ -16,6 +16,6 @@ final class n implements ii {
             main.GameGraphic.i();
         }
 
-        cx.getInstance().a((byte) 4, this.a);
+        cx.getInstance().sendMessageToServer((byte) 4, this.a);
     }
 }

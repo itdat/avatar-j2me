@@ -193,9 +193,9 @@ public final class StringEntity {
     public static String cD;
     public static String cE;
     public static String cF;
-    public static String cG;
-    public static String cH;
-    public static String cI;
+    public static String SEND_GAME_TO_FRIEND = "Gui cho ban be";
+    public static String PHONE_NUMBER = "So dien thoai";
+    public static String cI = "Ban co the chon so dien thoai tu Menu / Danh ba";
     public static String cJ;
     public static String cK;
     public static String cL;
@@ -460,9 +460,6 @@ public final class StringEntity {
         cE = "Nhập lại";
         var10000 = new String[]{"Hoa rơi", "Tim bay"};
         cF = "Tặng game cho..";
-        cG = "Gui cho ban be";
-        cH = "So dien thoai";
-        cI = "Ban co the chon so dien thoai tu Menu / Danh ba";
         cJ = "Game khác";
         cK = "Bạn có muốn nâng cấp giỏ đồ không ?";
         cL = "Bạn có muốn thoát game để vào mục này không?";

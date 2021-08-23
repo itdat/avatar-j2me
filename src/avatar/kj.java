@@ -5,11 +5,11 @@ import java.io.IOException;
 public class kj {
 
     private hq a = kt.getInstance();
-    protected IOStream b;
+    protected IOStream iOStream;
 
     protected final void n(int var1) {
         try {
-            this.b.getDataOutputStream().writeInt(var1);
+            this.iOStream.getDataOutputStream().writeInt(var1);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -17,7 +17,7 @@ public class kj {
 
     protected final void o(int var1) {
         try {
-            this.b.getDataOutputStream().writeByte(var1);
+            this.iOStream.getDataOutputStream().writeByte(var1);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -25,7 +25,7 @@ public class kj {
 
     protected final void p(int var1) {
         try {
-            this.b.getDataOutputStream().writeShort(var1);
+            this.iOStream.getDataOutputStream().writeShort(var1);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -33,18 +33,19 @@ public class kj {
 
     public final void c(String var1) {
         try {
-            this.b.getDataOutputStream().writeUTF(var1);
+            this.iOStream.getDataOutputStream().writeUTF(var1);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
     public final void k() {
-        this.a.a(this.b);
-        this.b.closeDataStream();
+        this.a.a(this.iOStream);
+        this.iOStream.closeDataStream();
     }
 
+    // prepare before send message
     public final void e(byte var1) {
-        this.b = new IOStream(var1);
+        this.iOStream = new IOStream(var1);
     }
 }

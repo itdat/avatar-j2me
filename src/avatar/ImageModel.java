@@ -1,8 +1,13 @@
 package avatar;
 
+import extension.Base64;
 import java.io.DataInputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 import javax.microedition.lcdui.Image;
+import javax.microedition.io.Connection;
+import javax.microedition.io.Connector;
+import javax.microedition.io.file.FileConnection;
 
 // c
 public final class ImageModel {
@@ -68,7 +73,9 @@ public final class ImageModel {
 
     // a String
     public static Image getImageFromIndex(String index) {
-        return INST.getImage(index + ".png");
+        Image image = INST.getImage(index + ".png");
+        //System.out.println("image " + index + ": " + Base64.encode(INST.imageData));
+        return image;
     }
 
     public static void b(String var0) {

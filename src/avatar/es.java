@@ -198,7 +198,7 @@ public final class es extends hj {
                     main.GameGraphic.i();
                 }
 
-                cx.getInstance().a((byte) 5, (String) null);
+                cx.getInstance().sendMessageToServer((byte) 5, (String) null);
                 return;
             case 9:
                 main.GameGraphic.showAlert(StringEntity.bH + StringEntity.bG);

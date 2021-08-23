@@ -131,36 +131,43 @@ public final class ea extends hj {
         }
     }
 
-    public final void d(int var1, int var2) {
-        switch (var1) {
+    public final void d(int command, int var2) {
+        switch (command) {
             case 1:
+                System.out.println("COMMAND: OPEN GAME SETTINGS");
                 dm.INST.a();
                 return;
             case 2:
-                cx.getInstance().a((byte) 6, "");
+                System.out.println("COMMAND: VIEW CITY INFORMATION");
+                cx.getInstance().sendMessageToServer((byte) 6, "");
                 return;
             case 3:
+                System.out.println("COMMAND: CHANGE PASSWORD");
                 aeClass.getInstance().u();
                 return;
             case 4:
-                Form var5 = new Form(StringEntity.cG);
-                TextField var6 = new TextField(StringEntity.cH, "", 50, 3);
-                var5.append(var6);
-                var5.append(StringEntity.cI);
-                Command var3 = new Command(StringEntity.OK, 4, 1);
-                var5.addCommand(var3);
-                Command var4 = new Command(StringEntity.CLOSE, 2, 1);
-                var5.addCommand(var4);
-                var5.setCommandListener(new fs(this, var3, var6));
-                Display.getDisplay(GameMidlet.gameMidlet).setCurrent(var5);
+                System.out.println("COMMAND: SEND GAME TO FRIEND");
+                Form inputForm = new Form(StringEntity.SEND_GAME_TO_FRIEND);
+                TextField phoneNumberInput = new TextField(StringEntity.PHONE_NUMBER, "", 11, TextField.PHONENUMBER);
+                inputForm.append(phoneNumberInput);
+                inputForm.append(StringEntity.cI);  // ban co the chon so tu menu/danh ba
+                Command okCommand = new Command(StringEntity.OK, Command.OK, 1);
+                inputForm.addCommand(okCommand);
+                Command closeCommand = new Command(StringEntity.CLOSE, Command.BACK, 1);
+                inputForm.addCommand(closeCommand);
+                inputForm.setCommandListener(new SendGameCommandListener(this, okCommand, phoneNumberInput));
+                Display.getDisplay(GameMidlet.gameMidlet).setCurrent(inputForm);
                 return;
             case 5:
-                cx.getInstance().a((byte) 3, (String) null);
+                System.out.println("COMMAND: MORE GAMES");
+                cx.getInstance().sendMessageToServer((byte) 3, (String) null);
                 return;
             case 6:
+                System.out.println("COMMAND: EXIT GAME");
                 aeClass.getInstance().v();
                 return;
             case 7:
+                System.out.println("###CASE 7");
                 bb.h();
                 (main.GameGraphic.D = new bb()).a();
                 super.ac = null;

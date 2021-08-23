@@ -68,8 +68,8 @@ public final class iy extends kj {
         this.e((byte) -24);
 
         try {
-            super.b.getDataOutputStream().writeShort(var1);
-            super.b.getDataOutputStream().writeByte(var2);
+            super.iOStream.getDataOutputStream().writeShort(var1);
+            super.iOStream.getDataOutputStream().writeByte(var2);
         } catch (Exception var3) {
         }
 
@@ -80,14 +80,14 @@ public final class iy extends kj {
         this.e((byte) -46);
 
         try {
-            super.b.getDataOutputStream().writeShort(var2);
-            super.b.getDataOutputStream().writeShort(var1.length);
+            super.iOStream.getDataOutputStream().writeShort(var2);
+            super.iOStream.getDataOutputStream().writeShort(var1.length);
 
             for (var2 = 0; var2 < var1.length; ++var2) {
-                super.b.getDataOutputStream().writeByte(var1[var2]);
+                super.iOStream.getDataOutputStream().writeByte(var1[var2]);
             }
 
-            super.b.getDataOutputStream().writeShort(0);
+            super.iOStream.getDataOutputStream().writeShort(0);
         } catch (Exception var3) {
         }
 
@@ -99,10 +99,10 @@ public final class iy extends kj {
         this.e((byte) -74);
 
         try {
-            super.b.getDataOutputStream().writeShort(var1.b);
-            super.b.getDataOutputStream().writeByte(var1.aw / 24);
-            super.b.getDataOutputStream().writeByte(var1.ax / 24);
-            super.b.getDataOutputStream().writeByte(var1.f);
+            super.iOStream.getDataOutputStream().writeShort(var1.b);
+            super.iOStream.getDataOutputStream().writeByte(var1.aw / 24);
+            super.iOStream.getDataOutputStream().writeByte(var1.ax / 24);
+            super.iOStream.getDataOutputStream().writeByte(var1.f);
         } catch (IOException var2) {
         }
 
@@ -120,10 +120,10 @@ public final class iy extends kj {
         this.e((byte) -66);
 
         try {
-            super.b.getDataOutputStream().writeShort(var1.b);
-            super.b.getDataOutputStream().writeByte(var1.aw / 24);
-            super.b.getDataOutputStream().writeByte(var1.ax / 24);
-            super.b.getDataOutputStream().writeByte(var1.c);
+            super.iOStream.getDataOutputStream().writeShort(var1.b);
+            super.iOStream.getDataOutputStream().writeByte(var1.aw / 24);
+            super.iOStream.getDataOutputStream().writeByte(var1.ax / 24);
+            super.iOStream.getDataOutputStream().writeByte(var1.c);
         } catch (Exception var2) {
         }
 
@@ -152,12 +152,12 @@ public final class iy extends kj {
         this.e((byte) -71);
 
         try {
-            super.b.getDataOutputStream().writeShort(var1);
-            super.b.getDataOutputStream().writeByte(var2);
-            super.b.getDataOutputStream().writeByte(var3);
-            super.b.getDataOutputStream().writeByte(var4);
-            super.b.getDataOutputStream().writeByte(var5);
-            super.b.getDataOutputStream().writeByte(var6);
+            super.iOStream.getDataOutputStream().writeShort(var1);
+            super.iOStream.getDataOutputStream().writeByte(var2);
+            super.iOStream.getDataOutputStream().writeByte(var3);
+            super.iOStream.getDataOutputStream().writeByte(var4);
+            super.iOStream.getDataOutputStream().writeByte(var5);
+            super.iOStream.getDataOutputStream().writeByte(var6);
         } catch (IOException var7) {
         }
 
@@ -168,10 +168,10 @@ public final class iy extends kj {
         this.e((byte) -75);
 
         try {
-            super.b.getDataOutputStream().writeByte(var3);
-            super.b.getDataOutputStream().writeUTF(var1);
+            super.iOStream.getDataOutputStream().writeByte(var3);
+            super.iOStream.getDataOutputStream().writeUTF(var1);
             if (var3 == 1) {
-                super.b.getDataOutputStream().writeInt(var2);
+                super.iOStream.getDataOutputStream().writeInt(var2);
             }
         } catch (IOException var4) {
         }

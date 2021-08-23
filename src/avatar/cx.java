@@ -16,14 +16,15 @@ public final class cx extends kj {
         return INST;
     }
 
-    public final void a(byte var1, String var2) {
-        if (var2 == null) {
-            var2 = "";
+    // sendMessageToServer
+    public final void sendMessageToServer(byte type, String message) {
+        if (message == null) {
+            message = "";
         }
         this.e((byte) -55);
         try {
-            super.b.getDataOutputStream().writeByte(var1);
-            super.b.getDataOutputStream().writeUTF(var2);
+            super.iOStream.getDataOutputStream().writeByte(type);
+            super.iOStream.getDataOutputStream().writeUTF(message);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -37,31 +38,31 @@ public final class cx extends kj {
         this.k();
         this.e((byte) -17);
         try {
-            super.b.getDataOutputStream().writeByte(GameMidlet.providerByte);
+            super.iOStream.getDataOutputStream().writeByte(GameMidlet.providerByte);
             Runtime var1 = Runtime.getRuntime();
-            super.b.getDataOutputStream().writeInt((int) (var1.totalMemory() / 1024L));
+            super.iOStream.getDataOutputStream().writeInt((int) (var1.totalMemory() / 1024L));
             String var4;
             if ((var4 = System.getProperty("microedition.platform")) == null) {
                 var4 = "null";
             }
-            super.b.getDataOutputStream().writeUTF(var4);
-            super.b.getDataOutputStream().writeInt(d());
-            super.b.getDataOutputStream().writeInt(GameGraphic.width);
-            super.b.getDataOutputStream().writeInt(GameGraphic.height);
-            super.b.getDataOutputStream().writeBoolean(GameGraphic.H);
-            super.b.getDataOutputStream().writeByte(gy.Y - 1);
-            super.b.getDataOutputStream().writeUTF("2.5.8");
+            super.iOStream.getDataOutputStream().writeUTF(var4);
+            super.iOStream.getDataOutputStream().writeInt(d());
+            super.iOStream.getDataOutputStream().writeInt(GameGraphic.width);
+            super.iOStream.getDataOutputStream().writeInt(GameGraphic.height);
+            super.iOStream.getDataOutputStream().writeBoolean(GameGraphic.H);
+            super.iOStream.getDataOutputStream().writeByte(gy.Y - 1);
+            super.iOStream.getDataOutputStream().writeUTF("2.5.8");
             System.out.println("setProviderAndClientType: " + dp.i + "    " + ea.i + "    " + aeClass.j);
-            super.b.getDataOutputStream().writeUTF(dp.i);
-            super.b.getDataOutputStream().writeUTF(ea.i);
-            super.b.getDataOutputStream().writeUTF(aeClass.j);
+            super.iOStream.getDataOutputStream().writeUTF(dp.i);
+            super.iOStream.getDataOutputStream().writeUTF(ea.i);
+            super.iOStream.getDataOutputStream().writeUTF(aeClass.j);
         } catch (IOException e) {
             e.printStackTrace();
         }
         this.k();
         this.e((byte) -79);
         try {
-            super.b.getDataOutputStream().writeUTF(GameMidlet.agentStr);
+            super.iOStream.getDataOutputStream().writeUTF(GameMidlet.agentStr);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -99,9 +100,9 @@ public final class cx extends kj {
         this.e((byte) -2);
         try {
             System.out.println("login: " + username + " " + password);
-            super.b.getDataOutputStream().writeUTF(username);
-            super.b.getDataOutputStream().writeUTF(password);
-            super.b.getDataOutputStream().writeUTF(var3);
+            super.iOStream.getDataOutputStream().writeUTF(username);
+            super.iOStream.getDataOutputStream().writeUTF(password);
+            super.iOStream.getDataOutputStream().writeUTF(var3);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -117,8 +118,8 @@ public final class cx extends kj {
     public final void a(int var1, String var2) {
         this.e((byte) -6);
         try {
-            super.b.getDataOutputStream().writeInt(var1);
-            super.b.getDataOutputStream().writeUTF(var2);
+            super.iOStream.getDataOutputStream().writeInt(var1);
+            super.iOStream.getDataOutputStream().writeUTF(var2);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -128,12 +129,12 @@ public final class cx extends kj {
     public final void c() {
         this.e((byte) -35);
         try {
-            super.b.getDataOutputStream().writeByte(GameMidlet.i.d);
+            super.iOStream.getDataOutputStream().writeByte(GameMidlet.i.d);
             int var1 = GameMidlet.i.e.size();
-            super.b.getDataOutputStream().writeByte(var1);
+            super.iOStream.getDataOutputStream().writeByte(var1);
             for (int i = 0; i < var1; ++i) {
                 hx var3 = (hx) GameMidlet.i.e.elementAt(i);
-                super.b.getDataOutputStream().writeShort(var3.a);
+                super.iOStream.getDataOutputStream().writeShort(var3.a);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -144,8 +145,8 @@ public final class cx extends kj {
     public final void a(int var1, int var2) {
         this.e((byte) -36);
         try {
-            super.b.getDataOutputStream().writeShort(var1);
-            super.b.getDataOutputStream().writeByte(var2);
+            super.iOStream.getDataOutputStream().writeShort(var1);
+            super.iOStream.getDataOutputStream().writeByte(var2);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -160,10 +161,10 @@ public final class cx extends kj {
 
     public final void a(short var1, byte var2) {
         this.e((byte) -48);
-        super.b = new IOStream((byte) -48);
+        super.iOStream = new IOStream((byte) -48);
         try {
-            super.b.getDataOutputStream().writeShort(var1);
-            super.b.getDataOutputStream().writeByte(var2);
+            super.iOStream.getDataOutputStream().writeShort(var1);
+            super.iOStream.getDataOutputStream().writeByte(var2);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -205,9 +206,9 @@ public final class cx extends kj {
     public final void a(int var1, byte var2, int var3) {
         this.e((byte) -59);
         try {
-            super.b.getDataOutputStream().writeInt(var1);
-            super.b.getDataOutputStream().writeByte(var2);
-            super.b.getDataOutputStream().writeByte(var3);
+            super.iOStream.getDataOutputStream().writeInt(var1);
+            super.iOStream.getDataOutputStream().writeByte(var2);
+            super.iOStream.getDataOutputStream().writeByte(var3);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -217,9 +218,9 @@ public final class cx extends kj {
     public final void a(int var1, byte var2, String var3) {
         this.e((byte) -60);
         try {
-            super.b.getDataOutputStream().writeInt(var1);
-            super.b.getDataOutputStream().writeByte(var2);
-            super.b.getDataOutputStream().writeUTF(var3);
+            super.iOStream.getDataOutputStream().writeInt(var1);
+            super.iOStream.getDataOutputStream().writeByte(var2);
+            super.iOStream.getDataOutputStream().writeUTF(var3);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -237,9 +238,9 @@ public final class cx extends kj {
     public final void b(String var1, String var2, String var3) {
         this.e((byte) -56);
         try {
-            super.b.getDataOutputStream().writeUTF(var1);
-            super.b.getDataOutputStream().writeUTF(var2);
-            super.b.getDataOutputStream().writeUTF(var3);
+            super.iOStream.getDataOutputStream().writeUTF(var1);
+            super.iOStream.getDataOutputStream().writeUTF(var2);
+            super.iOStream.getDataOutputStream().writeUTF(var3);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -249,8 +250,8 @@ public final class cx extends kj {
     public final void a(String var1, String var2) {
         this.e((byte) -62);
         try {
-            super.b.getDataOutputStream().writeUTF(var1);
-            super.b.getDataOutputStream().writeUTF(var2);
+            super.iOStream.getDataOutputStream().writeUTF(var1);
+            super.iOStream.getDataOutputStream().writeUTF(var2);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -260,8 +261,8 @@ public final class cx extends kj {
     public final void a(short var1, int var2) {
         this.e((byte) -64);
         try {
-            super.b.getDataOutputStream().writeShort(var1);
-            super.b.getDataOutputStream().writeShort(var2);
+            super.iOStream.getDataOutputStream().writeShort(var1);
+            super.iOStream.getDataOutputStream().writeShort(var2);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -271,8 +272,8 @@ public final class cx extends kj {
     public final void b(int var1, String var2) {
         this.e((byte) -72);
         try {
-            super.b.getDataOutputStream().writeInt(var1);
-            super.b.getDataOutputStream().writeUTF(var2);
+            super.iOStream.getDataOutputStream().writeInt(var1);
+            super.iOStream.getDataOutputStream().writeUTF(var2);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -282,10 +283,10 @@ public final class cx extends kj {
     public final void a(int var1, byte var2, int var3, byte var4) {
         this.e((byte) -81);
         try {
-            super.b.getDataOutputStream().writeInt(var1);
-            super.b.getDataOutputStream().writeByte(var2);
-            super.b.getDataOutputStream().writeShort(var3);
-            super.b.getDataOutputStream().writeByte(var4);
+            super.iOStream.getDataOutputStream().writeInt(var1);
+            super.iOStream.getDataOutputStream().writeByte(var2);
+            super.iOStream.getDataOutputStream().writeShort(var3);
+            super.iOStream.getDataOutputStream().writeByte(var4);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -296,8 +297,8 @@ public final class cx extends kj {
         System.out.println("doRequestCmdRotate: " + var1);
         this.e((byte) -83);
         try {
-            super.b.getDataOutputStream().writeShort(var1);
-            super.b.getDataOutputStream().writeInt(var2);
+            super.iOStream.getDataOutputStream().writeShort(var1);
+            super.iOStream.getDataOutputStream().writeInt(var2);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -313,8 +314,8 @@ public final class cx extends kj {
     public final void a(String var1, byte var2) {
         this.e((byte) -88);
         try {
-            super.b.getDataOutputStream().writeByte(0);
-            super.b.getDataOutputStream().writeUTF(var1);
+            super.iOStream.getDataOutputStream().writeByte(0);
+            super.iOStream.getDataOutputStream().writeUTF(var1);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -324,9 +325,9 @@ public final class cx extends kj {
     public final void b(String var1, String var2) {
         this.e((byte) -88);
         try {
-            super.b.getDataOutputStream().writeByte(1);
-            super.b.getDataOutputStream().writeUTF(var1);
-            super.b.getDataOutputStream().writeUTF(var2);
+            super.iOStream.getDataOutputStream().writeByte(1);
+            super.iOStream.getDataOutputStream().writeUTF(var1);
+            super.iOStream.getDataOutputStream().writeUTF(var2);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -342,9 +343,9 @@ public final class cx extends kj {
     public final void a(int var1, int var2, short var3) {
         this.e((byte) -89);
         try {
-            super.b.getDataOutputStream().writeByte(var1);
-            super.b.getDataOutputStream().writeShort(var2);
-            super.b.getDataOutputStream().writeShort(var3);
+            super.iOStream.getDataOutputStream().writeByte(var1);
+            super.iOStream.getDataOutputStream().writeShort(var2);
+            super.iOStream.getDataOutputStream().writeShort(var3);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -368,9 +369,9 @@ public final class cx extends kj {
     public final void a(short var1) {
         this.e((byte) -95);
         try {
-            super.b.getDataOutputStream().writeByte(aeClass.A);
-            super.b.getDataOutputStream().writeByte(0);
-            super.b.getDataOutputStream().writeShort(var1);
+            super.iOStream.getDataOutputStream().writeByte(aeClass.A);
+            super.iOStream.getDataOutputStream().writeByte(0);
+            super.iOStream.getDataOutputStream().writeShort(var1);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -425,8 +426,8 @@ public final class cx extends kj {
     public final void a(byte var1, short var2) {
         this.e((byte) -107);
         try {
-            super.b.getDataOutputStream().writeByte(var1);
-            super.b.getDataOutputStream().writeShort(var2);
+            super.iOStream.getDataOutputStream().writeByte(var1);
+            super.iOStream.getDataOutputStream().writeShort(var2);
             this.k();
         } catch (Exception e) {
             e.printStackTrace();

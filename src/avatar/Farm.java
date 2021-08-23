@@ -54,9 +54,9 @@ public final class Farm extends kj {
         this.e((byte) 62);
 
         try {
-            super.b.getDataOutputStream().writeShort(var1);
-            super.b.getDataOutputStream().writeByte(var2);
-            super.b.getDataOutputStream().writeByte(var3);
+            super.iOStream.getDataOutputStream().writeShort(var1);
+            super.iOStream.getDataOutputStream().writeByte(var2);
+            super.iOStream.getDataOutputStream().writeByte(var3);
         } catch (IOException var4) {
         }
 
@@ -76,9 +76,9 @@ public final class Farm extends kj {
         this.e((byte) 64);
 
         try {
-            super.b.getDataOutputStream().writeInt(var1);
-            super.b.getDataOutputStream().writeByte(var2);
-            super.b.getDataOutputStream().writeByte(var3);
+            super.iOStream.getDataOutputStream().writeInt(var1);
+            super.iOStream.getDataOutputStream().writeByte(var2);
+            super.iOStream.getDataOutputStream().writeByte(var3);
         } catch (IOException var4) {
         }
 
@@ -90,9 +90,9 @@ public final class Farm extends kj {
         this.e((byte) 65);
 
         try {
-            super.b.getDataOutputStream().writeInt(var1);
-            super.b.getDataOutputStream().writeByte(plotLandIndex);
-            super.b.getDataOutputStream().writeShort(itemType);
+            super.iOStream.getDataOutputStream().writeInt(var1);
+            super.iOStream.getDataOutputStream().writeByte(plotLandIndex);
+            super.iOStream.getDataOutputStream().writeShort(itemType);
         } catch (IOException var4) {
         }
 
@@ -103,8 +103,8 @@ public final class Farm extends kj {
         System.out.println("doHarvest: " + var1 + "   " + var2);
         this.e((byte) 66);
         try {
-            super.b.getDataOutputStream().writeInt(var1);
-            super.b.getDataOutputStream().writeByte(var2);
+            super.iOStream.getDataOutputStream().writeInt(var1);
+            super.iOStream.getDataOutputStream().writeByte(var2);
         } catch (IOException var3) {
         }
         this.k();
@@ -115,8 +115,8 @@ public final class Farm extends kj {
         this.e((byte) 70);
 
         try {
-            super.b.getDataOutputStream().writeInt(var1);
-            super.b.getDataOutputStream().writeByte(var2);
+            super.iOStream.getDataOutputStream().writeInt(var1);
+            super.iOStream.getDataOutputStream().writeByte(var2);
         } catch (Exception var3) {
         }
 
@@ -135,8 +135,8 @@ public final class Farm extends kj {
         this.e((byte) 74);
 
         try {
-            super.b.getDataOutputStream().writeInt(var1);
-            super.b.getDataOutputStream().writeByte(var2);
+            super.iOStream.getDataOutputStream().writeInt(var1);
+            super.iOStream.getDataOutputStream().writeByte(var2);
         } catch (Exception var3) {
         }
 
@@ -148,8 +148,8 @@ public final class Farm extends kj {
         this.e((byte) 73);
 
         try {
-            super.b.getDataOutputStream().writeInt(var1);
-            super.b.getDataOutputStream().writeByte(var2);
+            super.iOStream.getDataOutputStream().writeInt(var1);
+            super.iOStream.getDataOutputStream().writeByte(var2);
         } catch (Exception var3) {
         }
 
@@ -162,8 +162,8 @@ public final class Farm extends kj {
         this.e((byte) 71);
 
         try {
-            super.b.getDataOutputStream().writeByte(var1.a);
-            super.b.getDataOutputStream().writeByte(var2);
+            super.iOStream.getDataOutputStream().writeByte(var1.a);
+            super.iOStream.getDataOutputStream().writeByte(var2);
         } catch (Exception var3) {
         }
 
@@ -175,8 +175,8 @@ public final class Farm extends kj {
         this.e((byte) 72);
 
         try {
-            super.b.getDataOutputStream().writeInt(var1);
-            super.b.getDataOutputStream().writeByte(var2);
+            super.iOStream.getDataOutputStream().writeInt(var1);
+            super.iOStream.getDataOutputStream().writeByte(var2);
         } catch (Exception var3) {
         }
 
@@ -187,8 +187,8 @@ public final class Farm extends kj {
         System.out.println("it e(int,int): " + var1 + " " + var2);
         this.e((byte) 75);
         try {
-            super.b.getDataOutputStream().writeInt(var1);
-            super.b.getDataOutputStream().writeByte(var2);
+            super.iOStream.getDataOutputStream().writeInt(var1);
+            super.iOStream.getDataOutputStream().writeByte(var2);
         } catch (Exception var3) {
         }
         this.k();
