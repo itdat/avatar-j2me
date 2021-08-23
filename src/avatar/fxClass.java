@@ -670,16 +670,16 @@ public final class fxClass {
         ByteArrayOutputStream var0 = new ByteArrayOutputStream();
         DataOutputStream var1 = new DataOutputStream(var0);
         try {
-            var1.writeByte(dm.getInstance().b[4]);
-            var1.writeByte(GameMidlet.cityIpAddresses[dm.getInstance().b[4]].length);
-            for (int var2 = 0; var2 < GameMidlet.cityIpAddresses[dm.getInstance().b[4]].length; ++var2) {
-                var1.writeByte(GameMidlet.cityIpAddresses[dm.getInstance().b[4]][var2].length);
-                var1.writeUTF(GameMidlet.cityNames[dm.getInstance().b[4]][var2][0]);
+            var1.writeByte(dm.INST.b[4]);
+            var1.writeByte(GameMidlet.cityIpAddresses[dm.INST.b[4]].length);
+            for (int var2 = 0; var2 < GameMidlet.cityIpAddresses[dm.INST.b[4]].length; ++var2) {
+                var1.writeByte(GameMidlet.cityIpAddresses[dm.INST.b[4]][var2].length);
+                var1.writeUTF(GameMidlet.cityNames[dm.INST.b[4]][var2][0]);
 
-                for (int var3 = 0; var3 < GameMidlet.cityIpAddresses[dm.getInstance().b[4]][var2].length; ++var3) {
-                    var1.writeUTF(GameMidlet.cityNames[dm.getInstance().b[4]][var2][var3 + 1]);
-                    var1.writeUTF(GameMidlet.cityIpAddresses[dm.getInstance().b[4]][var2][var3]);
-                    var1.writeInt(GameMidlet.cityPorts[dm.getInstance().b[4]][var2][var3]);
+                for (int var3 = 0; var3 < GameMidlet.cityIpAddresses[dm.INST.b[4]][var2].length; ++var3) {
+                    var1.writeUTF(GameMidlet.cityNames[dm.INST.b[4]][var2][var3 + 1]);
+                    var1.writeUTF(GameMidlet.cityIpAddresses[dm.INST.b[4]][var2][var3]);
+                    var1.writeInt(GameMidlet.cityPorts[dm.INST.b[4]][var2][var3]);
                 }
             }
             awClass.addRecord("avatarSV", var0.toByteArray());
@@ -693,7 +693,7 @@ public final class fxClass {
         DataInputStream var0;
         if ((var0 = a("avatarSV")) != null) {
             try {
-                if (var0.readByte() == dm.getInstance().b[4]) {
+                if (var0.readByte() == dm.INST.b[4]) {
                     byte var1;
                     if ((var1 = var0.readByte()) == 0) {
                         b("avatarSV");
@@ -704,15 +704,15 @@ public final class fxClass {
 
                         for (int var2 = 0; var2 < var1; ++var2) {
                             byte var3 = var0.readByte();
-                            GameMidlet.cityNames[dm.getInstance().b[4]][var2] = new String[var3 + 1];
-                            GameMidlet.cityNames[dm.getInstance().b[4]][var2][0] = var0.readUTF();
-                            GameMidlet.cityIpAddresses[dm.getInstance().b[4]][var2] = new String[var3];
-                            GameMidlet.cityPorts[dm.getInstance().b[4]][var2] = new int[var3];
+                            GameMidlet.cityNames[dm.INST.b[4]][var2] = new String[var3 + 1];
+                            GameMidlet.cityNames[dm.INST.b[4]][var2][0] = var0.readUTF();
+                            GameMidlet.cityIpAddresses[dm.INST.b[4]][var2] = new String[var3];
+                            GameMidlet.cityPorts[dm.INST.b[4]][var2] = new int[var3];
 
                             for (int var4 = 0; var4 < var3; ++var4) {
-                                GameMidlet.cityNames[dm.getInstance().b[4]][var2][var4 + 1] = var0.readUTF();
-                                GameMidlet.cityIpAddresses[dm.getInstance().b[4]][var2][var4] = var0.readUTF();
-                                GameMidlet.cityPorts[dm.getInstance().b[4]][var2][var4] = var0.readInt();
+                                GameMidlet.cityNames[dm.INST.b[4]][var2][var4 + 1] = var0.readUTF();
+                                GameMidlet.cityIpAddresses[dm.INST.b[4]][var2][var4] = var0.readUTF();
+                                GameMidlet.cityPorts[dm.INST.b[4]][var2][var4] = var0.readInt();
                             }
                         }
                         var0.close();

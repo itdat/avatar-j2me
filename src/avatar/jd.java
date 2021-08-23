@@ -15,7 +15,7 @@ public final class jd extends hj {
     private Button f;
     private Button g;
     private Button h;
-    private Image i;
+    private Image coinImage;
     private int j;
     private int k;
     private int l;
@@ -41,9 +41,9 @@ public final class jd extends hj {
     }
 
     public final void e() {
-        if (this.i == null) {
+        if (this.coinImage == null) {
             ImageModel.b(StringEntity.FARM_AV);
-            this.i = ImageModel.getImageFromIndex("coin");
+            this.coinImage = ImageModel.getImageFromIndex("coin");
             ImageModel.cleanUp();
         }
 
@@ -85,7 +85,7 @@ public final class jd extends hj {
             case 0:
                 main.GameGraphic.y.m = false;
                 this.e.a();
-                this.i = null;
+                this.coinImage = null;
                 return;
             case 1:
             case 2:
@@ -95,8 +95,8 @@ public final class jd extends hj {
                 }
 
                 String var3;
-                gu var8;
-                if ((var8 = (gu) this.b.elementAt(super.ar)).c.indexOf(StringEntity.aH) != -1) {
+                gu var8 = (gu) this.b.elementAt(super.ar);
+                if (var8.c.indexOf(StringEntity.aH) != -1) {
                     var3 = main.GameGraphic.K.a(var8.c, StringEntity.aI, GameMidlet.i.x);
                     main.GameGraphic.a(StringEntity.cL, (ii) (new ci(this, var3)));
                 } else {
@@ -145,11 +145,10 @@ public final class jd extends hj {
                     var1 = Integer.parseInt(main.GameGraphic.u.a());
                     Farm.getInstance().doOpenATM(var1, super.ar == 0 ? 1 : 0);
                     main.GameGraphic.i();
-                    return;
-                } catch (Exception var5) {
+                } catch (NumberFormatException e) {
+                    e.printStackTrace();
                 }
         }
-
     }
 
     public final void c() {
@@ -162,7 +161,6 @@ public final class jd extends hj {
     }
 
     public jd() {
-        new dr(0, 1);
         this.o = 0;
         this.p = -1;
     }
@@ -259,7 +257,7 @@ public final class jd extends hj {
     }
 
     private void d(Graphics var1) {
-        int var2 = this.i.getWidth() + 14;
+        int var2 = this.coinImage.getWidth() + 14;
         int var3 = this.b.size();
 
         int var4;
@@ -273,7 +271,7 @@ public final class jd extends hj {
                 }
             }
 
-            var1.drawImage(this.i, this.j + var2 / 2, var4 * this.n + this.n / 2, 3);
+            var1.drawImage(this.coinImage, this.j + var2 / 2, var4 * this.n + this.n / 2, 3);
         }
 
         for (var4 = 0; var4 < var3; ++var4) {

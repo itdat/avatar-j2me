@@ -369,7 +369,7 @@ public final class jy extends hj {
     public static void f() {
         if (b && dm.d) {
             dm.d = false;
-            dm.getInstance().b[4] = 0;
+            dm.INST.b[4] = 0;
             main.GameGraphic.INST.b();
             g();
         }

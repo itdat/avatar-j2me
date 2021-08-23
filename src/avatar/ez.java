@@ -61,7 +61,7 @@ public final class ez extends hj {
                     if (!this.d) {
                         this.d = true;
                         this.e();
-                        super.ar = 1 + awClass.e(GameMidlet.cityNames[dm.getInstance().b[4]][this.b].length - 1);
+                        super.ar = 1 + awClass.e(GameMidlet.cityNames[dm.INST.b[4]][this.b].length - 1);
                         this.g();
                         return;
                     }
@@ -98,32 +98,32 @@ public final class ez extends hj {
     private void f() {
         while (true) {
             main.GameGraphic.d(StringEntity.PLEASE_WAIT);
-            if (this.m >= GameMidlet.d[dm.getInstance().b[4]].length) {
+            if (this.m >= GameMidlet.d[dm.INST.b[4]].length) {
                 main.GameGraphic.showAlert(StringEntity.ds);
                 this.m = 0;
                 return;
             }
 
-            String var1 = GameMidlet.getRequest(GameMidlet.d[dm.getInstance().b[4]][this.m]);
+            String var1 = GameMidlet.getRequest(GameMidlet.d[dm.INST.b[4]][this.m]);
             if ((var1) != null) {
                 String[] var6 = main.GameGraphic.K.a(var1, "*");
-                GameMidlet.cityPorts[dm.getInstance().b[4]] = new int[var6.length - 1][];
-                GameMidlet.cityIpAddresses[dm.getInstance().b[4]] = new String[var6.length - 1][];
-                GameMidlet.cityNames[dm.getInstance().b[4]] = new String[var6.length - 1][];
+                GameMidlet.cityPorts[dm.INST.b[4]] = new int[var6.length - 1][];
+                GameMidlet.cityIpAddresses[dm.INST.b[4]] = new String[var6.length - 1][];
+                GameMidlet.cityNames[dm.INST.b[4]] = new String[var6.length - 1][];
 
                 for (int var2 = 1; var2 < var6.length; ++var2) {
                     String[] var3 = main.GameGraphic.K.a(var6[var2], "\n");
-                    GameMidlet.cityNames[dm.getInstance().b[4]][var2 - 1] = new String[var3.length - 1];
-                    GameMidlet.cityIpAddresses[dm.getInstance().b[4]][var2 - 1] = new String[var3.length - 2];
-                    GameMidlet.cityPorts[dm.getInstance().b[4]][var2 - 1] = new int[var3.length - 2];
-                    GameMidlet.cityNames[dm.getInstance().b[4]][var2 - 1][0] = var3[0];
+                    GameMidlet.cityNames[dm.INST.b[4]][var2 - 1] = new String[var3.length - 1];
+                    GameMidlet.cityIpAddresses[dm.INST.b[4]][var2 - 1] = new String[var3.length - 2];
+                    GameMidlet.cityPorts[dm.INST.b[4]][var2 - 1] = new int[var3.length - 2];
+                    GameMidlet.cityNames[dm.INST.b[4]][var2 - 1][0] = var3[0];
 
                     for (int var4 = 1; var4 < var3.length - 1; ++var4) {
                         String[] var5 = main.GameGraphic.K.a(var3[var4], ":");
-                        GameMidlet.cityNames[dm.getInstance().b[4]][var2 - 1][var4] = var5[0];
-                        GameMidlet.cityIpAddresses[dm.getInstance().b[4]][var2 - 1][var4 - 1] = var5[1];
+                        GameMidlet.cityNames[dm.INST.b[4]][var2 - 1][var4] = var5[0];
+                        GameMidlet.cityIpAddresses[dm.INST.b[4]][var2 - 1][var4 - 1] = var5[1];
                         var5[2] = var5[2].substring(0, var5[2].length() - 1);
-                        GameMidlet.cityPorts[dm.getInstance().b[4]][var2 - 1][var4 - 1] = Integer.parseInt(var5[2]);
+                        GameMidlet.cityPorts[dm.INST.b[4]][var2 - 1][var4 - 1] = Integer.parseInt(var5[2]);
                     }
                 }
                 fxClass.e();
@@ -149,7 +149,7 @@ public final class ez extends hj {
         k = je.a().g + 4;
         l = je.a().h + je.o + gy.Z;
         j = je.a().e - (je.o + (gy.Z << 1));
-        i = GameMidlet.cityNames[dm.getInstance().b[4]].length * hj.av + (this.d ? GameMidlet.cityNames[dm.getInstance().b[4]][this.b].length * hj.av : 0) - j;
+        i = GameMidlet.cityNames[dm.INST.b[4]].length * hj.av + (this.d ? GameMidlet.cityNames[dm.INST.b[4]][this.b].length * hj.av : 0) - j;
         e = 0;
         f = 0;
         if (i < 0) {
@@ -206,18 +206,18 @@ public final class ez extends hj {
 
     private void b(int var1) {
         this.b = var1;
-        if (this.b >= GameMidlet.cityNames[dm.getInstance().b[4]].length) {
+        if (this.b >= GameMidlet.cityNames[dm.INST.b[4]].length) {
             this.b = 0;
         }
         if (this.b < 0) {
-            this.b = GameMidlet.cityNames[dm.getInstance().b[4]].length - 1;
+            this.b = GameMidlet.cityNames[dm.INST.b[4]].length - 1;
         }
 
     }
 
     public final void a(int var1, boolean var2) {
         super.ar = var1;
-        if (super.ar >= GameMidlet.cityNames[dm.getInstance().b[4]][this.b].length || super.ar <= 0) {
+        if (super.ar >= GameMidlet.cityNames[dm.INST.b[4]][this.b].length || super.ar <= 0) {
             super.ar = 0;
             if (var2) {
                 this.d = false;
@@ -266,7 +266,7 @@ public final class ez extends hj {
                 var5 = (e + main.GameGraphic.i - l) / hj.av;
                 if (this.d) {
                     super.ar = var5 - this.b;
-                } else if (var5 >= 0 && var5 < GameMidlet.cityNames[dm.getInstance().b[4]].length) {
+                } else if (var5 >= 0 && var5 < GameMidlet.cityNames[dm.INST.b[4]].length) {
                     this.b = var5;
                 }
 
@@ -299,7 +299,7 @@ public final class ez extends hj {
                     if (!super.aj) {
                         int var7 = (e + main.GameGraphic.i - l) / hj.av;
                         if (this.d) {
-                            if (var7 - this.b > 0 && var7 - this.b < GameMidlet.cityNames[dm.getInstance().b[4]][this.b].length) {
+                            if (var7 - this.b > 0 && var7 - this.b < GameMidlet.cityNames[dm.INST.b[4]][this.b].length) {
                                 super.ar = var7 - this.b;
                                 this.a(0, -1);
                             } else {
@@ -310,14 +310,14 @@ public final class ez extends hj {
                                     var1 = true;
                                 }
 
-                                if (var7 >= GameMidlet.cityNames[dm.getInstance().b[4]][this.b].length - this.b && var7 < GameMidlet.cityNames[dm.getInstance().b[4]][this.b].length - 1 + GameMidlet.cityNames[dm.getInstance().b[4]].length) {
+                                if (var7 >= GameMidlet.cityNames[dm.INST.b[4]][this.b].length - this.b && var7 < GameMidlet.cityNames[dm.INST.b[4]][this.b].length - 1 + GameMidlet.cityNames[dm.INST.b[4]].length) {
                                     this.d = false;
                                     super.ar = 0;
-                                    this.b = var7 - GameMidlet.cityNames[dm.getInstance().b[4]][this.b].length + 1;
+                                    this.b = var7 - GameMidlet.cityNames[dm.INST.b[4]][this.b].length + 1;
                                     var1 = true;
                                 }
                             }
-                        } else if (var7 >= 0 && var7 < GameMidlet.cityNames[dm.getInstance().b[4]].length) {
+                        } else if (var7 >= 0 && var7 < GameMidlet.cityNames[dm.INST.b[4]].length) {
                             this.b = var7;
                             this.a(0, -1);
                         }
@@ -366,13 +366,13 @@ public final class ez extends hj {
 
         int var2 = (hj.av - gy.ah) / 2;
 
-        for (int var3 = 0; var3 < GameMidlet.cityNames[dm.getInstance().b[4]].length; ++var3) {
-            main.GameGraphic.K.a(var1, GameMidlet.cityNames[dm.getInstance().b[4]][var3][0], 24 * gy.Y, var2, 0);
+        for (int var3 = 0; var3 < GameMidlet.cityNames[dm.INST.b[4]].length; ++var3) {
+            main.GameGraphic.K.a(var1, GameMidlet.cityNames[dm.INST.b[4]][var3][0], 24 * gy.Y, var2, 0);
             je.a.a(0, 14 * gy.Y, var2 + gy.ah / 2, 5, 3, var1);
             var2 += hj.av;
             if (this.d && this.b == var3) {
-                for (int var4 = 1; var4 < GameMidlet.cityNames[dm.getInstance().b[4]][var3].length; ++var4) {
-                    main.GameGraphic.K.a(var1, GameMidlet.cityNames[dm.getInstance().b[4]][var3][var4], 36 * gy.Y, var2, 0);
+                for (int var4 = 1; var4 < GameMidlet.cityNames[dm.INST.b[4]][var3].length; ++var4) {
+                    main.GameGraphic.K.a(var1, GameMidlet.cityNames[dm.INST.b[4]][var3][var4], 36 * gy.Y, var2, 0);
                     var1.drawImage(this.c, 24 * gy.Y, var2 + gy.ah / 2, 3);
                     var2 += hj.av;
                 }

@@ -163,7 +163,7 @@ public final class GameGraphic extends Canvas implements Runnable, CommandListen
         u = new hb();
         x = new ir();
         y = new ho();
-        dm.getInstance().e();
+        dm.INST.e();
         S.c();
         if (this.hasPointerEvents()) {
             au = new Vector();
@@ -262,7 +262,7 @@ public final class GameGraphic extends Canvas implements Runnable, CommandListen
                 ez.b().e();
             }
             if (r == dm.INST) {
-                dm.getInstance().e();
+                dm.INST.e();
             }
             if (r == cy.b()) {
                 cy.b().f();
@@ -294,7 +294,7 @@ public final class GameGraphic extends Canvas implements Runnable, CommandListen
             if (city < 0) {
                 city = 0;
             }
-            int nation = dm.getInstance().b[4];
+            int nation = dm.INST.b[4];
             int land = ez.b().b;
             String uri = "socket://"
                     + GameMidlet.cityIpAddresses[nation][land][city] + ":"

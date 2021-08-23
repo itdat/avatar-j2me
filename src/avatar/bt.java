@@ -9,7 +9,7 @@ final class bt implements ii {
     }
 
     public final void a() {
-        dm.getInstance().b(20);
+        dm.INST.b(20);
         this.a.a();
     }
 }

@@ -24,7 +24,7 @@ public final class q {
             } else {
                 Vector var3 = new Vector();
                 if (aeClass.t) {
-                    dm.getInstance().b(dm.getInstance().c / 10);
+                    dm.INST.b(dm.INST.c / 10);
                     var4.a();
                 } else {
                     var3.addElement(new Button(StringEntity.ep[1], new bj(this, var4)));

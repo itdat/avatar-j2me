@@ -24,7 +24,7 @@ public final class hz extends cc {
     }
 
     public final void a(Graphics var1) {
-        if (dm.getInstance().b[1] != 1 && main.GameGraphic.D == null) {
+        if (dm.INST.b[1] != 1 && main.GameGraphic.D == null) {
             if (super.aw * js.ay >= do1.a().a && super.aw * js.ay <= do1.a().a + main.GameGraphic.width && super.ax * js.ay >= do1.a().b && super.ax * js.ay <= do1.a().b + main.GameGraphic.height + 10 && main.GameGraphic.r != cd.b()) {
                 var1.drawImage(ir.r, super.aw * js.ay, super.ax * js.ay, 3);
                 if (ea.b().b != null) {

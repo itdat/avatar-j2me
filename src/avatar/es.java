@@ -177,7 +177,7 @@ public final class es extends hj {
                 main.GameGraphic.u.a(StringEntity.bC, 100, 3);
                 return;
             case 5:
-                dm.getInstance().a();
+                dm.INST.a();
                 return;
             case 6:
                 GameMidlet.b("http://wap.teamobi.com/faqs.php?provider=" + GameMidlet.providerByte);
@@ -225,12 +225,12 @@ public final class es extends hj {
                 Button var4 = new Button(StringEntity.EXIT, 2);
                 var5.addElement(new Button(StringEntity.bB, 4));
                 var5.addElement(new Button(StringEntity.ab, 5));
-                if (dm.getInstance().b[4] == 0) {
+                if (dm.INST.b[4] == 0) {
                     var5.addElement(new Button(StringEntity.bD, 6));
                 }
 
                 var5.addElement(new Button(StringEntity.bE, 7));
-                if (dm.getInstance().b[4] == 0) {
+                if (dm.INST.b[4] == 0) {
                     var5.addElement(new Button(StringEntity.bF, 8));
                 }
 
@@ -404,7 +404,7 @@ public final class es extends hj {
         } else if (main.GameGraphic.v == null && this == main.GameGraphic.r) {
             main.GameGraphic.S.a(var1, this.j, this.k, this.l, this.m, 0);
             var1.setClip(this.j + 4, this.k + 4, this.l - 8, this.m - 8);
-            if (!this.F.equals("") && dm.getInstance().b[4] == 0) {
+            if (!this.F.equals("") && dm.INST.b[4] == 0) {
                 main.GameGraphic.S.a(var1, "Hotline: " + this.F, this.j + this.l - 8, this.k + this.m - gy.ah - 4, 1);
             }
 

@@ -134,7 +134,7 @@ public final class ea extends hj {
     public final void d(int var1, int var2) {
         switch (var1) {
             case 1:
-                dm.getInstance().a();
+                dm.INST.a();
                 return;
             case 2:
                 cx.getInstance().a((byte) 6, "");

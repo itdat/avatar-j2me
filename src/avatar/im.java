@@ -39,7 +39,7 @@ public final class im extends gy {
         this.b.a(true);
         if (jy.b && dm.d) {
             dm.d = false;
-            dm.getInstance().b[4] = 0;
+            dm.INST.b[4] = 0;
             GameGraphic.INST.b();
         }
     }

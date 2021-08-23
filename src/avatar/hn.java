@@ -160,7 +160,7 @@ public final class hn extends gx {
                 }
             }
 
-            if ((dm.getInstance().b[0] == 0 || this == ir.p) && ir.a != 24) {
+            if ((dm.INST.b[0] == 0 || this == ir.p) && ir.a != 24) {
                 this.a(var1, super.aw * js.ay, (super.ax + super.N) * js.ay - gy.ai);
             }
 

@@ -54,7 +54,7 @@ public final class jv extends hj {
                 }
             } else if (b == 52) {
                 es.b().h();
-                dm.getInstance().f();
+                dm.INST.f();
                 if (!es.u) {
                     es.u = true;
                     fxClass.b("avatarSV");
@@ -82,8 +82,8 @@ public final class jv extends hj {
 
     private static void b(int var0) {
         main.GameGraphic.i();
-        dm.getInstance().b[4] = var0;
-        dm.getInstance().b(0);
+        dm.INST.b[4] = var0;
+        dm.INST.b(0);
         es.b().e();
         es.b().a();
         c = null;

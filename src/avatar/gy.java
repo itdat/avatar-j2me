@@ -97,7 +97,7 @@ public class gy {
              if (GameMidlet.e == 9 && GameGraphic.a(50, 0, 50 * Y, 50 * Y)) {
                 if (!dm.d) {
                    dm.d = true;
-                   dm.getInstance().b[4] = 1;
+                   dm.INST.b[4] = 1;
                    main.GameGraphic.INST.b();
                    GameGraphic.z.a = true;
                    if (GameGraphic.r == aeClass.getInstance()) {
@@ -106,7 +106,7 @@ public class gy {
                    }
                 } else {
                    dm.d = false;
-                   dm.getInstance().b[4] = 0;
+                   dm.INST.b[4] = 0;
                    main.GameGraphic.INST.b();
                    if (GameGraphic.r == aeClass.getInstance()) {
                       im.c = false;

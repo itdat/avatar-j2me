@@ -9,7 +9,7 @@ import main.GameGraphic;
 
 public final class dm extends hj {
 
-    public static dm INST; // a
+    public static dm INST = new dm(); // a
     private int f = 0;
     private int g = 0;
     private int h = 5;
@@ -22,12 +22,8 @@ public final class dm extends hj {
     public static boolean e = false;
     private boolean[] l;
 
-    // b
-    public static dm getInstance() {
-        if (INST == null) {
-            INST = new dm();
-        }
-        return INST;
+    private dm(){
+        this.l = new boolean[this.h];
     }
 
     public final void a() {
@@ -44,10 +40,6 @@ public final class dm extends hj {
                 this.k.a();
             default:
         }
-    }
-
-    public dm() {
-        this.l = new boolean[this.h];
     }
 
     public final void e() {
